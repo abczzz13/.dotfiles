@@ -74,10 +74,10 @@ _G.packer_plugins = {
     path = "/home/abczzz13/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/gruvbox-community/gruvbox"
   },
-  ["gruvbox.nvim"] = {
+  ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/abczzz13/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
+    path = "/home/abczzz13/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["packer.nvim"] = {
     loaded = true,

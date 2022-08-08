@@ -122,4 +122,4 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 export GPG_TTY=$TTY
-alias dotfiles='/usr/bin/git --git-dir=/home/abczzz13/.dotfiles/ -- work-tree=/home/abczzz13'
+alias dotfiles='/usr/bin/git --git-dir=/home/abczzz13/.dotfiles/ --work-tree=/home/abczzz13'
