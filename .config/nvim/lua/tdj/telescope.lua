@@ -13,9 +13,16 @@ require("telescope").setup{
 require("telescope").load_extension("fzf")
 require("telescope").load_extension("file_browser")
 
+-- Move this to the 'right' place
+vim.api.nvim_set_keymap(
+  "n",
+  "<space>ts",
+  ":Telescope <CR>",
+  { noremap = true }
+)
 vim.api.nvim_set_keymap(
   "n",
   "<space>fb",
-  ":Telescope file_browser",
+  ":Telescope file_browser<CR>",
   { noremap = true }
 )
