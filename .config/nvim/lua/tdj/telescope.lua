@@ -7,7 +7,7 @@ local actions = require("telescope.actions")
 
 require("telescope").setup{
     defaults = {
-        prompt_prefix = "$ ", -- or " >"?
+        prompt_prefix = "> ", -- or " >"?
     }
 }
 require("telescope").load_extension("fzf")
