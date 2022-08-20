@@ -4,6 +4,7 @@ require("tdj.packer")
 require("tdj.telescope")
 require("tdj.cmp")
 require("tdj.lsp")
+require("tdj.null-ls")
 -- LSP Setup
 --[[
 require'lspconfig'.pyright.setup{

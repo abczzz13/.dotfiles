@@ -8,3 +8,4 @@ local nmap = Remap.nmap
 
 nnoremap("<leader>pv", "<cmd>Ex<CR>")
 inoremap("jk", "<esc>")
+nnoremap("<leader>ff", ":lua vim.lsp.buf.format()<CR>")
