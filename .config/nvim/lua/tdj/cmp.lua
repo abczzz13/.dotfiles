@@ -1,9 +1,22 @@
+-- read :help ins-completion
+--
+local cmp_status_ok, cmp = pcall(require, "cmp")
+if not cmp_status_ok then
+    return
+end
+
+local snip_status_ok, luasnip = pcall(require, "luasnip")
+if not snip_status_ok then
+    return
+end
+
 local lspkind = require "lspkind"
 lspkind.init()
 
-local cmp = require "cmp"
-
--- read :help ins-completion
+local check_backspace = function()
+    local col = vim.fn.col "." - 1
+    return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
+end
 
 cmp.setup {
     mapping = {
@@ -27,7 +40,7 @@ cmp.setup {
     },
     snippet = {
         expand = function(args)
-            require("luasnip").lsp_expand(args.body)
+            luasnip.lsp_expand(args.body)
         end,
     },
     formatting = {
@@ -42,6 +55,10 @@ cmp.setup {
                 cmdline = "[cmd]",
             },
         },
+    },
+    window = {
+        documentation = {
+            border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
     },
     experimental = {
         native_menu = false,

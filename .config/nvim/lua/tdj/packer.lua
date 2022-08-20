@@ -1,72 +1,105 @@
--- This file can be loaded by calling `lua require("plugins")` from your init.vim
+local fn = vim.fn
 
---[[Still need to install:
--- fzf
--- telescope
--- neogit
--- treesitter
--- cmp
--- nvim tree or nerdtree
--- "kyazdani42/nvim-web-devicons"
--- maybe jedi-vim
--- Poet-V
-]]
--- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
+-- Automatically install packer
+local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
+if fn.empty(fn.glob(install_path)) > 0 then
+    PACKER_BOOTSTRAP = fn.system {
+        "git",
+        "clone",
+        "--depth",
+        "1",
+        "https://github.com/wbthomason/packer.nvim",
+        install_path,
+  }
+  print("Installing packer close and reopen Neovim...")
+  vim.cmd([[packadd packer.nvim]])
+end
 
-return require("packer").startup(function(use)
-    use "wbthomason/packer.nvim"
+-- Autocommand that reloads neovim whenever you save the plugins.lua file
+vim.cmd([[
+    augroup packer_user_config
+        autocmd!
+        autocmd BufWritePost packer.lua source <afile> | PackerSync
+    augroup end
+]])
+
+-- Use a protected call so we don't error out on first use
+local status_ok, packer = pcall(require, "packer")
+if not status_ok then
+    return
+end
+
+-- Have packer use a popup window
+packer.init {
+    display = {
+        open_fn = function()
+            return require("packer.util").float { border = "rounded" }
+        end,
+    },
+}
+
+return packer.startup(function(use)
+    use({"wbthomason/packer.nvim"})
 
     -- Telescope
-    use "nvim-lua/plenary.nvim"
-    use "nvim-lua/popup.nvim"
-    use {
+    use({"nvim-lua/plenary.nvim"})
+    use({"nvim-lua/popup.nvim"})
+    use({
         "nvim-telescope/telescope.nvim", tag = "0.1.0",
     requires = { {"nvim-lua/plenary.nvim"} }
-    }
-    use {"nvim-telescope/telescope-fzf-native.nvim", run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build" }
-    use "nvim-telescope/telescope-file-browser.nvim"
+    })
+    use({
+        "nvim-telescope/telescope-fzf-native.nvim",
+        run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build"
+    })
+    use({"nvim-telescope/telescope-file-browser.nvim"})
 
     -- Treesitter
-    use {
+    use({
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate"
-    } 
-    use "nvim-treesitter/nvim-treesitter-context"
+    })
+    use({"nvim-treesitter/nvim-treesitter-context"})
 
     -- LSP
-    use "neovim/nvim-lspconfig"
-    use "onsails/lspkind.nvim"
+    use({"neovim/nvim-lspconfig"})
+    use({"onsails/lspkind.nvim"})
 
     -- nvim-cmp auto-completion
-    use "hrsh7th/nvim-cmp"
-    use "hrsh7th/cmp-nvim-lsp"
-    use "hrsh7th/cmp-nvim-lua"
-    use "hrsh7th/cmp-buffer"
-    use "hrsh7th/cmp-path"
-    use "hrsh7th/cmp-cmdline"
+    use({"hrsh7th/nvim-cmp"})
+    use({"hrsh7th/cmp-nvim-lsp"})
+    use({"hrsh7th/cmp-nvim-lua"})
+    use({"hrsh7th/cmp-buffer"})
+    use({"hrsh7th/cmp-path"})
+    use({"hrsh7th/cmp-cmdline"})
+    use({"saadparwaiz1/cmp_luasnip"})
     
     -- Luasnip for nvim-cmp
-    use "L3MON4D3/LuaSnip"
-    use "saadparwaiz1/cmp_luasnip"
+    use({"L3MON4D3/LuaSnip"})
 
     -- null-ls
-    use "jose-elias-alvarez/null-ls.nvim"
+    use({"jose-elias-alvarez/null-ls.nvim"})
 
     -- Colorschemes
-    use "folke/tokyonight.nvim"
-    use "gruvbox-community/gruvbox"
-    use { "catppuccin/nvim", as = "catppuccin" }
-    use "EdenEast/nightfox.nvim"
+    use({"folke/tokyonight.nvim"})
+    use({"gruvbox-community/gruvbox"})
+    use({ "catppuccin/nvim", as = "catppuccin"})
+    use({"EdenEast/nightfox.nvim"})
     use "ful1e5/onedark.nvim"
-    use "rebelot/kanagawa.nvim"
+    use({"rebelot/kanagawa.nvim"})
 
     -- Utilities
-    use {
+    use({
         "nvim-lualine/lualine.nvim",
         requires = { "kyazdani42/nvim-web-devicons", opt = true }
-    }
+    })
 
-    use "kyazdani42/nvim-web-devicons"
+    use({"kyazdani42/nvim-web-devicons"})
+    
+    -- Automatically set up your configuration after cloning packer.nvim
+    -- Put this at the end after all plugins
+    if PACKER_BOOTSTRAP then
+        require("packer").sync()
+    end
 end)
 
