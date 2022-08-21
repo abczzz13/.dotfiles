@@ -10,38 +10,62 @@ if not snip_status_ok then
     return
 end
 
+local autopairs_status_ok, cmp_autopairs = pcall(require, "nvim-autopairs.completion.cmp")
+if not autopairs_status_ok then
+    return
+end
+
+require("luasnip/loaders/from_vscode").lazy_load()
+
 local lspkind = require "lspkind"
 lspkind.init()
 
-local check_backspace = function()
-    local col = vim.fn.col "." - 1
-    return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
-end
-
 cmp.setup {
-    mapping = {
-        ["<c-d>"] = cmp.mapping.scroll_docs(-4),
-        ["<c-f>"] = cmp.mapping.scroll_docs(4),
-        ["<c-e>"] = cmp.mapping.close(),
-        ["<c-y>"] = cmp.mapping.confirm {
-            behavior = cmp.ConfirmBehavior.Insert,
-            select = true
-        },
-
-        ["<c-space>"] = cmp.mapping.complete(),
-    },
-    sources = {
-        { name = "nvim_lua" },
-        { name = "nvim_lsp" },
-        { name = "path" },
-        { name = "luasnip" },
-        { name = "buffer", keyword_length = 3},
-        { name = "cmdline" },
-    },
     snippet = {
         expand = function(args)
             luasnip.lsp_expand(args.body)
         end,
+    },
+    mapping = {
+        ["<c-k>"] = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Insert },
+        ["<c-j>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert },
+        ["<c-d>"] = cmp.mapping.scroll_docs(-4),
+        ["<c-f>"] = cmp.mapping.scroll_docs(4),
+        ["<c-e>"] = cmp.mapping.abort(),
+        ["<c-y>"] = cmp.mapping(
+            cmp.mapping.confirm {
+                behavior = cmp.ConfirmBehavior.Insert,
+                select = true
+            },
+            { "i", "c" }
+        ),
+        ["<c-space>"] = cmp.mapping {
+            i = cmp.mapping.complete(),
+            c = function(
+                _ -- [[fallback]]
+            )
+                if cmp.visible() then
+                    if not cmp.confirm { select = true } then
+                        return
+                    end
+                else
+                    cmp.complete()
+                end
+            end,
+        },
+        ["<tab>"] = cmp.config.disable,
+        ["<c-q>"] = cmp.mapping.confirm {
+            behavior = cmp.ConfirmBehavior.Replace,
+            select = true,
+        }
+    },
+    sources = {
+        { name = "nvim_lua" },
+        { name = "nvim_lsp" },
+        { name = "luasnip" },
+        { name = "buffer", keyword_length = 3},
+        { name = "path" },
+        -- { name = "cmdline" },
     },
     formatting = {
         format = lspkind.cmp_format {
@@ -59,6 +83,7 @@ cmp.setup {
     window = {
         documentation = {
             border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+        }
     },
     experimental = {
         native_menu = false,
@@ -75,6 +100,10 @@ cmp.setup.cmdline(':', {
     })
 })
 
+cmp.event:on(
+  'confirm_done',
+  cmp_autopairs.on_confirm_done()
+)
 --[[
 -- Setup lspconfig.
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())

@@ -16,7 +16,7 @@ nnoremap("<C-j>", "<C-w>j")
 nnoremap("<C-k>", "<C-w>k")
 nnoremap("<C-l>", "<C-w>l")
 
-nnoremap("<leader>e", ":Lex 30<CR>")
+nnoremap("<leader>e", ":NvimTreeToggle<CR>")
 
 --[[Resize with arrows
 nnoremap("C-Up", ":resize +2<CR>")
@@ -26,8 +26,8 @@ nnoremap("C-Right", ":vertical resize +2<CR>")
 ]]
 
 -- Navigate buffers
-nnoremap("<S-l>",":bnext<CR>") 
-nnoremap("<S-h>",":bprevious<CR>") 
+nnoremap("<S-l>",":bnext<CR>")
+nnoremap("<S-h>",":bprevious<CR>")
 
 -- Stay in indent mode
 vnoremap("<", "<gv")

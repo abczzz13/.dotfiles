@@ -11,6 +11,9 @@ end)
 nnoremap("<Leader>pf", function()
     require('telescope.builtin').find_files()
 end)
+nnoremap("<Leader>pa", function()
+    require('telescope.builtin').live_grep()
+end)
 
 nnoremap("<leader>pw", function()
     require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }
@@ -26,16 +29,18 @@ end)
 nnoremap("<leader>vwh", function()
     require('telescope.builtin').help_tags()
 end)
-
+--[[
 nnoremap("<leader>vrc", function()
     require('tdj.telescope').search_dotfiles({ hidden = true })
 end)
+
 nnoremap("<leader>gc", function()
     require('tdj.telescope').git_branches()
 end)
 nnoremap("<leader>td", function()
     require('tdj.telescope').dev()
 end)
+]]
 
 -- Move this to the 'right' place
 vim.api.nvim_set_keymap(

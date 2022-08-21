@@ -64,6 +64,7 @@ return packer.startup(function(use)
     -- LSP
     use({"neovim/nvim-lspconfig"})
     use({"onsails/lspkind.nvim"})
+    use({"williamboman/nvim-lsp-installer"})
 
     -- nvim-cmp auto-completion
     use({"hrsh7th/nvim-cmp"})
@@ -73,12 +74,29 @@ return packer.startup(function(use)
     use({"hrsh7th/cmp-path"})
     use({"hrsh7th/cmp-cmdline"})
     use({"saadparwaiz1/cmp_luasnip"})
-    
+
     -- Luasnip for nvim-cmp
     use({"L3MON4D3/LuaSnip"})
 
     -- null-ls
     use({"jose-elias-alvarez/null-ls.nvim"})
+
+    -- Commenting
+    use({ "numToStr/Comment.nvim" })
+	use({ "JoosepAlviste/nvim-ts-context-commentstring" })
+
+    -- Autopairs
+    use({"windwp/nvim-autopairs"})
+
+    -- NvimTree
+    use({ "kyazdani42/nvim-tree.lua"})
+
+    -- Bufferline
+    use({ "akinsho/bufferline.nvim" })
+    use({ "moll/vim-bbye" })
+
+    -- Gitsigns
+    use({ "lewis6991/gitsigns.nvim" })
 
     -- Colorschemes
     use({"folke/tokyonight.nvim"})
@@ -95,7 +113,7 @@ return packer.startup(function(use)
     })
 
     use({"kyazdani42/nvim-web-devicons"})
-    
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
