@@ -4,10 +4,10 @@ if not status_ok then
 end
 
 comment.setup {
-    toggler = {
-        line = "<a-/>",
-        block = "<a-?>"
-    },
+    --[[toggler = {
+        line = "<m-.>", --"<c-/>",
+        block = "<a-[>"
+    },]]
     pre_hook = function(ctx)
         local U = require "Comment.utils"
 

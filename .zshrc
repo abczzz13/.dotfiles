@@ -1,3 +1,5 @@
+export GPG_TTY=$TTY
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -77,7 +79,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump gpg-agent zsh-autosuggestions zsh-syntax-highlighting poetry history)
+plugins=(git autojump poetry zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,20 +112,44 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Aliases
-alias t="tmux"
-alias ta="t a -t"
-alias tls="t ls"
-alias tn="t new -t"
+# Enable vi mode
+# bindkey -v
+# alias python=/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
+# alias pip=/Library/Frameworks/Python.framework/Versions/3.10/bin/pip3
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
- eval "$(pyenv init -)"
-fi
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
-export GPG_TTY=$TTY
-alias dotfiles='/usr/bin/git --git-dir=/home/abczzz13/.dotfiles/ --work-tree=/home/abczzz13'
+export PATH="$HOME/.poetry/bin:$PATH"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+HISTTIMEFORMAT="%Y-%m-%d %T "
+export PATH="/opt/homebrew/opt/gnupg@2.2/bin:$PATH"
+
+# bindkey "^[b" backward-word
+# bindkey "^[f" forward-word
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
+export EDITOR="nvim"
+export VISUAL="nvim"
+alias vimdiff='nvim -d'
+
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# Created by `pipx` on 2022-09-20 11:13:25
+export PATH="$PATH:/Users/thomasdejong/.local/bin"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export KUBECONFIG="$HOME/.kube/configs/eh3-test/config:$HOME/.kube/configs/ehk3-acceptance/config:$HOME/.kube/configs/ehk4-test/config:$HOME/.kube/configs/stembureauapp/config:$HOME/.kube/configs/sba-elements/config"
+
+alias k=kubectl
+alias d=docker
+alias g=git
+alias v=nvim
+alias cat=bat
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+
+source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+PROMPT='$(kube_ps1)'$PROMPT

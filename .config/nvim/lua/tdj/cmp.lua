@@ -17,8 +17,43 @@ end
 
 require("luasnip/loaders/from_vscode").lazy_load()
 
+local check_backspace = function()
+    local col = vim.fn.col "." -1
+    return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
+end
+
+local kind_icons = {
+  Text = "",
+  Method = "m",
+  Function = "",
+  Constructor = "",
+  Field = "",
+  Variable = "",
+  Class = "",
+  Interface = "",
+  Module = "",
+  Property = "",
+  Unit = "",
+  Value = "",
+  Enum = "",
+  Keyword = "",
+  Snippet = "",
+  Color = "",
+  File = "",
+  Reference = "",
+  Folder = "",
+  EnumMember = "",
+  Constant = "",
+  Struct = "",
+  Event = "",
+  Operator = "",
+  TypeParameter = "",
+}
+
+--[[
 local lspkind = require "lspkind"
 lspkind.init()
+]]
 
 cmp.setup {
     snippet = {
@@ -67,6 +102,7 @@ cmp.setup {
         { name = "path" },
         -- { name = "cmdline" },
     },
+    --[[
     formatting = {
         format = lspkind.cmp_format {
             with_text = true,
@@ -80,6 +116,26 @@ cmp.setup {
             },
         },
     },
+    ]]
+    formatting = {
+        fields = { "kind", "abbr", "menu" },
+        format = function(entry, vim_item)
+            -- kind icons
+            vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
+            vim_item.menu = ({
+                nvim_lsp = "[LSP}]",
+                luasnip = "[Snippet]",
+                buffer = "[Buffer]",
+                nvim_lua = "[api]",
+                path = "[Path]",
+            })[entry.source.name]
+            return vim_item
+        end,
+    },
+    confirm_opts = {
+        behavior = cmp.ConfirmBehavior.Replace,
+        select = false,
+    },
     window = {
         documentation = {
             border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
@@ -87,7 +143,7 @@ cmp.setup {
     },
     experimental = {
         native_menu = false,
-        ghost_text = true,
+        ghost_text = false,
     },
 }
 

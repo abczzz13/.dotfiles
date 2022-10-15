@@ -3,14 +3,7 @@
 -- require("catppuccin").setup()
 -- require("onedark").setup()
 
-vim.cmd [[
-try
-    colorscheme tokyonight
-catch /^Vim\%((\a\+)\)\=:E185/
-    colorscheme default
-    set background=dark
-endtry
-]]
+vim.cmd[[colorscheme tokyonight]]
 
 require("lualine").setup {
     options = {

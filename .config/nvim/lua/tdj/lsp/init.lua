@@ -5,4 +5,4 @@ end
 
 require "tdj.lsp.configs"
 require("tdj.lsp.handlers").setup()
--- require "tdj.lsp.null-ls"
+require "tdj.lsp.null-ls"

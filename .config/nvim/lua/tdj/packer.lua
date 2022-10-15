@@ -65,6 +65,11 @@ return packer.startup(function(use)
     use({"neovim/nvim-lspconfig"})
     use({"onsails/lspkind.nvim"})
     use({"williamboman/nvim-lsp-installer"})
+    use({"https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+        config = function()
+            require("lsp_lines").setup()
+        end,
+    })
 
     -- nvim-cmp auto-completion
     use({"hrsh7th/nvim-cmp"})
@@ -82,26 +87,47 @@ return packer.startup(function(use)
     use({"jose-elias-alvarez/null-ls.nvim"})
 
     -- Commenting
-    use({ "numToStr/Comment.nvim" })
-	use({ "JoosepAlviste/nvim-ts-context-commentstring" })
+    use({"numToStr/Comment.nvim"})
+	use({"JoosepAlviste/nvim-ts-context-commentstring"})
 
     -- Autopairs
     use({"windwp/nvim-autopairs"})
 
+    -- Undotree
+    use({"mbbill/undotree"})
+
+    use ({"ThePrimeagen/harpoon"})
+
     -- NvimTree
-    use({ "kyazdani42/nvim-tree.lua"})
+    use({"kyazdani42/nvim-tree.lua",
+        requires = {
+        "kyazdani42/nvim-web-devicons",
+        },
+        -- tag = "nightly",
+    })
 
     -- Bufferline
-    use({ "akinsho/bufferline.nvim" })
-    use({ "moll/vim-bbye" })
+    use({"akinsho/bufferline.nvim"})
+    use({"moll/vim-bbye"})
+
+    -- Alpha Greeter
+    use {
+        "goolord/alpha-nvim",
+        config = function ()
+            require'alpha'.setup(require"alpha.themes.dashboard".config)
+        end
+    }
 
     -- Gitsigns
-    use({ "lewis6991/gitsigns.nvim" })
+    use({"lewis6991/gitsigns.nvim"})
+
+    -- Indentation
+    use ({"lukas-reineke/indent-blankline.nvim"})
 
     -- Colorschemes
     use({"folke/tokyonight.nvim"})
     use({"gruvbox-community/gruvbox"})
-    use({ "catppuccin/nvim", as = "catppuccin"})
+    use({"catppuccin/nvim", as = "catppuccin"})
     use({"EdenEast/nightfox.nvim"})
     use "ful1e5/onedark.nvim"
     use({"rebelot/kanagawa.nvim"})
@@ -120,4 +146,3 @@ return packer.startup(function(use)
         require("packer").sync()
     end
 end)
-

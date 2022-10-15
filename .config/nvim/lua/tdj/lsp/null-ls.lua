@@ -5,13 +5,14 @@ end
 
 local formatting = null_ls.builtins.formatting
 local diagnostics = null_ls.builtins.diagnostics
+local actions = null_ls.builtins.code_actions
 
 local sources = {
-
+    --[[
     -- formatting
-    formatting.prettierd,
+    -- formatting.prettierd,
     -- null_ls.builtins.formatting.shfmt,
-    formatting.fixjson,
+    -- formatting.fixjson,
     formatting.black.with { extra_args = { "--fast", "--line-length", "88"} },
     formatting.autopep8.with { extra_args = { "--max-line-length", "88"} },
     formatting.isort.with { extra_args = { "--profile", "black" } },
@@ -24,7 +25,10 @@ local sources = {
     -- with_diagnostics_code(null_ls.builtins.diagnostics.shellcheck),
 
     -- code actions
-    -- null_ls.builtins.code_actions.gitsigns
-
+    -- actions.gitsigns
+    ]]
 }
-null_ls.setup({ sources = sources })
+null_ls.setup({
+    sources = sources,
+    -- debug = true,
+})

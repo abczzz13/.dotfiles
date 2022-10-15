@@ -5,13 +5,13 @@ nnoremap("<C-p>", ":Telescope")
 nnoremap("<leader>ps", function()
     require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})
 end)
-nnoremap("<C-p>", function()
-    require('telescope.builtin').git_files()
-end)
-nnoremap("<Leader>pf", function()
+--[[ nnoremap("<C-p>", function() ]]
+--[[     require('telescope.builtin').git_files() ]]
+--[[ end) ]]
+nnoremap("<leader>pf", function()
     require('telescope.builtin').find_files()
 end)
-nnoremap("<Leader>pa", function()
+nnoremap("<leader>pa", function()
     require('telescope.builtin').live_grep()
 end)
 
@@ -33,7 +33,6 @@ end)
 nnoremap("<leader>vrc", function()
     require('tdj.telescope').search_dotfiles({ hidden = true })
 end)
-
 nnoremap("<leader>gc", function()
     require('tdj.telescope').git_branches()
 end)

@@ -4,9 +4,9 @@ if not status_ok then
 end
 
 configs.setup {
-    ensure_installed = "all",
+    ensure_installed = { "python", "lua", "rust", "bash", "gitignore", "gitattributes", "go", "html", "json", "sql", "toml", "vim", "yaml"},
     sync_install = false,
-    ignore_install = { "" },
+    ignore_install = { "phpdoc" },
     autopairs = {
         enable = true,
     },
@@ -16,7 +16,7 @@ configs.setup {
     },
     indent = {
         enable = true,
-        disable = { "yaml" }
+        disable = { "yaml", "python" }
     },
     context_commentstring = {
         enable = true,

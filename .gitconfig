@@ -1,0 +1,16 @@
+[user]
+	signingkey = 276493428D7322D1
+	name = Thomas de Jong
+	email = thomas.dejong@elements.nl
+[diff]
+  tool = vimdiff
+[difftool "vimdiff"]
+  path = nvim
+[merge]
+  tool = vimdiff
+  conflicstyle = diff3
+  prompt = false
+[mergetool]
+  keepBackup = false
+[mergetool "vimdiff"]
+  path = nvim
