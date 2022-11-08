@@ -72,3 +72,5 @@ nnoremap("<leader>dd", "<cmd>Telescope diagnostics<CR>", { noremap = true, silen
 inoremap("<A-h>", "<cmd>lua vim.lsp.buf.signature_help()<CR>")
 
 	-- vim.api.nvim_buf_set_keymap(bufnr, "i", "<C-,>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
+-- DAP debug
+nnoremap("<leader><CR>", "<cmd>:lua require'dap'.continue()<CR>")

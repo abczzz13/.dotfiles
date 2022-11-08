@@ -1,0 +1,27 @@
+pane	1	0	1	:*	0	Thomass-MacBook-Pro.local	:/Users/thomasdejong	1	zsh	:
+pane	2	0	1	:*	0	Thomass-MacBook-Pro.local	:/Users/thomasdejong	1	zsh	:
+pane	3	0	1	:*	0	Thomass-MacBook-Pro.local	:/Users/thomasdejong	1	zsh	:
+pane	5	0	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	kpn-eid	0	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/deploy	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	1	zsh	:
+pane	kpn-eid	0	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/deploy	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	0	zsh	:
+pane	kpn-eid	0	1	:*	2	nvim .tmux.conf	:/Users/thomasdejong	0	nvim	:nvim .tmux.conf
+pane	kpn-eid	1	0	:	0	nvim .	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-session	1	python3.8	:/Users/thomasdejong/.pyenv/versions/3.8.13/bin/python3 /Users/thomasdejong/.poetry/bin/poetry shell
+pane	kpn-eid	1	0	:	1	nvim .	:/Users/thomasdejong/Projects/Elements/kpn_eid/helm-helpers	0	nvim	:nvim .
+pane	kpn-eid	1	0	:	2	Thomass-MacBook-Pro.local	:/Users/thomasdejong/.config/nvim/after/plugin	0	nvim	:nvim .
+pane	kpn-eid	2	0	:	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/deploy	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	1	zsh	:
+pane	kpn-eid	3	0	:	0	GPG_KEY=$(cat ~/.gnupg/private.gpg) GPG_UID=thomas.dejong@elements.nl = = = =	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	1	docker-compose	:docker-compose up --build
+pane	kpn-eid	3	0	:	1	nvim .env	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	0	nvim	:nvim .env
+pane	kpn-eid	3	0	:	2	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/deploy	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	0	zsh	:
+pane	kpn-eid	4	0	:-	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/stembureau-backend	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-backend	0	zsh	:
+pane	kpn-eid	4	0	:-	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/stembureau-backend	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-backend	0	zsh	:
+pane	kpn-eid	4	0	:-	2	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/stembureau-backend	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-backend	1	zsh	:
+window	1	0	:zsh	1	:*	d35e,295x68,0,0,1	:
+window	2	0	:zsh	1	:*	d35f,295x68,0,0,2	:
+window	3	0	:zsh	1	:*	d360,295x68,0,0,3	:
+window	5	0	:zsh	1	:*	69df,295x68,0,0,10	:
+window	kpn-eid	0	:general	1	:*	970c,295x68,0,0{147x68,0,0,18,147x68,148,0[147x34,148,0,23,147x33,148,35,24]}	off
+window	kpn-eid	1	:eid1	0	:	cdb0,295x68,0,0{148x68,0,0,7,146x68,149,0[146x34,149,0,8,146x33,149,35,9]}	off
+window	kpn-eid	2	:eid2	0	:	69e4,295x68,0,0,15	off
+window	kpn-eid	3	:eid cluster	0	:	470b,295x68,0,0{147x68,0,0,17,147x68,148,0[147x34,148,0,19,147x33,148,35,20]}	off
+window	kpn-eid	4	:sba	0	:-	d709,295x68,0,0{147x68,0,0,16,147x68,148,0[147x34,148,0,21,147x33,148,35,22]}	off
+state	kpn-eid	1

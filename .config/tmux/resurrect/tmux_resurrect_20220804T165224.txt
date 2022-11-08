@@ -1,0 +1,15 @@
+pane	1	0	1	:*	0	Thomass-MacBook-Pro.local	:/Users/thomasdejong	1	zsh	:
+pane	2	0	1	:*	0	Thomass-MacBook-Pro.local	:/Users/thomasdejong	1	zsh	:
+pane	3	0	1	:*	0	Thomass-MacBook-Pro.local	:/Users/thomasdejong	1	zsh	:
+pane	kpn-eid	0	0	:-	0	Thomass-MacBook-Pro.local	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	0	zsh	:
+pane	kpn-eid	0	0	:-	1	Thomass-MacBook-Pro.local	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-authorizations	1	stern	:stern -n istio-system ingress
+pane	kpn-eid	0	0	:-	2	Thomass-MacBook-Pro.local	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	0	zsh	:
+pane	kpn-eid	1	1	:*	0	Thomass-MacBook-Pro.local	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-authorizations	0	zsh	:
+pane	kpn-eid	1	1	:*	1	Thomass-MacBook-Pro.local	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-authorizations	1	zsh	:
+pane	kpn-eid	1	1	:*	2	Thomass-MacBook-Pro.local	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	0	sops	:sops ansible/inventory/clients/ehk3-acceptance/values.yaml
+window	1	0	:zsh	1	:*	b084,123x41,0,0,7	:
+window	2	0	:zsh	1	:*	b085,123x41,0,0,8	:
+window	3	0	:zsh	1	:*	b086,123x41,0,0,9	:
+window	kpn-eid	0	:main	0	:-	25dd,295x68,0,0{147x68,0,0,0,147x68,148,0[147x34,148,0,1,147x33,148,35,2]}	off
+window	kpn-eid	1	:nothing	1	:*	25ef,295x68,0,0{147x68,0,0,4,147x68,148,0[147x34,148,0,5,147x33,148,35,6]}	off
+state	kpn-eid	1

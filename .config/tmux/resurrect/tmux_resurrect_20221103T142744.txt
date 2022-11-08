@@ -1,0 +1,31 @@
+pane	1	0	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	2	0	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	3	0	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	5	0	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	kpn-eid	0	0	:	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/deploy	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	1	zsh	:
+pane	kpn-eid	0	0	:	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/deploy	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	0	zsh	:
+pane	kpn-eid	0	0	:	2	nvim .tmux.conf	:/Users/thomasdejong	0	nvim	:nvim .tmux.conf
+pane	kpn-eid	1	0	:	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/dse-session	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-session	1	zsh	:
+pane	kpn-eid	1	0	:	1	nvim .	:/Users/thomasdejong/Projects/Elements/kpn_eid/helm-helpers	0	nvim	:nvim .
+pane	kpn-eid	1	0	:	2	nvim .	:/Users/thomasdejong/.config/nvim/after/plugin	0	nvim	:nvim .
+pane	kpn-eid	2	0	:	0	nvim .	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-service-catalogue	1	nvim	:nvim .
+pane	kpn-eid	2	0	:	1	nvim .	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-service-catalogue	0	nvim	:nvim .
+pane	kpn-eid	2	0	:	2	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/dse-service-catalogue	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-service-catalogue	0	zsh	:
+pane	kpn-eid	3	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/deploy	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	1	zsh	:
+pane	kpn-eid	3	1	:*	1	nvim .env	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	0	nvim	:nvim .env
+pane	kpn-eid	3	1	:*	2	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/deploy	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	0	zsh	:
+pane	kpn-eid	4	0	:	0	make start	:/Users/thomasdejong/Projects/Elements/stembureauapp/backend-rewrite	1	make	:/Applications/Xcode.app/Contents/Developer/usr/bin/make start
+pane	kpn-eid	4	0	:	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/backend-rewrite/helm	:/Users/thomasdejong/Projects/Elements/stembureauapp/backend-rewrite/helm	0	zsh	:
+pane	kpn-eid	4	0	:	2	nvim Makefile	:/Users/thomasdejong/Projects/Elements/stembureauapp/backend-rewrite/helm	0	nvim	:nvim Makefile
+pane	kpn-eid	5	0	:-	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/deploy	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	1	zsh	:
+window	1	0	:zsh	1	:*	c93e,320x76,0,0,1	:
+window	2	0	:zsh	1	:*	c93f,320x76,0,0,2	:
+window	3	0	:zsh	1	:*	c940,320x76,0,0,3	:
+window	5	0	:zsh	1	:*	c941,320x76,0,0,4	:
+window	kpn-eid	0	:general	0	:	ccab,320x76,0,0{160x76,0,0,5,159x76,161,0[159x38,161,0,6,159x37,161,39,7]}	off
+window	kpn-eid	1	:eid1	0	:	5ad7,320x76,0,0{161x76,0,0,8,158x76,162,0[158x38,162,0,9,158x37,162,39,10]}	off
+window	kpn-eid	2	:eid2	0	:	b45c,320x76,0,0{160x76,0,0,18,159x76,161,0[159x38,161,0,20,159x37,161,39,21]}	off
+window	kpn-eid	3	:eid-cluster	1	:*	a477,320x76,0,0{160x76,0,0,12,159x76,161,0[159x38,161,0,13,159x37,161,39,14]}	off
+window	kpn-eid	4	:sba	0	:	c47b,320x76,0,0{160x76,0,0,15,159x76,161,0[159x38,161,0,16,159x37,161,39,17]}	off
+window	kpn-eid	5	:sba-cluster	0	:-	e4d1,320x76,0,0,22	off
+state	kpn-eid	1

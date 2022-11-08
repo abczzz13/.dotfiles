@@ -86,6 +86,11 @@ return packer.startup(function(use)
     -- null-ls
     use({"jose-elias-alvarez/null-ls.nvim"})
 
+    -- debugging with DAP
+    use({"mfussenegger/nvim-dap"})
+    use({"mfussenegger/nvim-dap-python"})
+    use({"rcarriga/nvim-dap-ui"})
+
     -- Commenting
     use({"numToStr/Comment.nvim"})
 	use({"JoosepAlviste/nvim-ts-context-commentstring"})

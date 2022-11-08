@@ -8,6 +8,12 @@ local diagnostics = null_ls.builtins.diagnostics
 local actions = null_ls.builtins.code_actions
 
 local sources = {
+    formatting.black.with { extra_args = { "--fast", "--line-length", "88"} },
+    formatting.autopep8.with { extra_args = { "--max-line-length", "88"} },
+    formatting.isort.with { extra_args = { "--profile", "black" } },
+    -- diagnostics.flake8.with { extra_args = { "--max-line-length", "88", "--extend-ignore", "E203" } },
+    -- diagnostics.pylint.with { extra_args = { "--max-line-length", "88", "--disable", "C0330" } },
+    actions.gitsigns
     --[[
     -- formatting
     -- formatting.prettierd,
@@ -25,7 +31,7 @@ local sources = {
     -- with_diagnostics_code(null_ls.builtins.diagnostics.shellcheck),
 
     -- code actions
-    -- actions.gitsigns
+    actions.gitsigns
     ]]
 }
 null_ls.setup({

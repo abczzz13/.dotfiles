@@ -28,3 +28,4 @@ vim.opt.sidescrolloff = 8
 vim.opt.smartcase = true
 vim.opt.guicursor = ""
 vim.opt.errorbells = false
+vim.wo.signcolumn = "yes"

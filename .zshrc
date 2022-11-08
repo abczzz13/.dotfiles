@@ -140,7 +140,21 @@ export PATH="$PATH:/Users/thomasdejong/.local/bin"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Setup fzf
+# ---------
+if [[ ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/opt/homebrew/opt/fzf/bin"
+fi
+
+# Auto-completion
+# ---------------
+[[ $- == *i* ]] && source "/opt/homebrew/opt/fzf/shell/completion.zsh" 2> /dev/null
+
+# Key bindings
+# ------------
+source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
+
 export KUBECONFIG="$HOME/.kube/configs/eh3-test/config:$HOME/.kube/configs/ehk3-acceptance/config:$HOME/.kube/configs/ehk4-test/config:$HOME/.kube/configs/stembureauapp/config:$HOME/.kube/configs/sba-elements/config"
 
 alias k=kubectl
@@ -153,3 +167,4 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 PROMPT='$(kube_ps1)'$PROMPT
+export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
