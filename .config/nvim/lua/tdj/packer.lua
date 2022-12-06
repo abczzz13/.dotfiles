@@ -123,8 +123,13 @@ return packer.startup(function(use)
         end
     }
 
+    -- Zettelkasten
+    use({"renerocksai/telekasten.nvim"})
+    use({"renerocksai/calendar-vim"})
+
     -- Gitsigns
     use({"lewis6991/gitsigns.nvim"})
+    use({"ThePrimeagen/git-worktree.nvim"})
 
     -- Indentation
     use ({"lukas-reineke/indent-blankline.nvim"})

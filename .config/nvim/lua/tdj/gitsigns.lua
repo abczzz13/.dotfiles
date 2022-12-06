@@ -46,3 +46,5 @@ gitsigns.setup {
     enable = false,
   },
 }
+
+require("git-worktree").setup()

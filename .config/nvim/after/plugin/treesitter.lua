@@ -23,3 +23,5 @@ configs.setup {
         enable_autocmd = false,
     }
 }
+
+require("telescope").load_extension("git_worktree")

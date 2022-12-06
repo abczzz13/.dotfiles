@@ -10,3 +10,6 @@ require("lualine").setup {
         theme = "tokyonight"
     }
 }
+
+vim.cmd[[highlight CursorlineNr guifg=000000]]
+vim.cmd[[highlight LineNr guifg=#b2b2b2]]

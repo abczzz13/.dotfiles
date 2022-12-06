@@ -24,17 +24,12 @@ vnoremap("<leader>d", "\"_d")
 -- Smooth scrollign with Ctrl d/u
 nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
+nnoremap("n", "nzz")
+nnoremap("N", "Nzz")
 
 --
-nnoremap("<leader>u", ":UndotreeToggle<CR>")
+nnoremap("<leader>u", ":UndotreeToggle<CR>:UndotreeFocus<CR>") -- :UndotreeToggle
 nnoremap("<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
-
---[[ Better window navigation
-nnoremap("<C-h>", "<C-w>h")
-nnoremap("<C-j>", "<C-w>j")
-nnoremap("<C-k>", "<C-w>k")
-nnoremap("<C-l>", "<C-w>l")
-]]
 
 nnoremap("<leader>e", ":NvimTreeToggle<CR>")
 
@@ -70,6 +65,13 @@ nnoremap("<leader>d[", "<cmd>lua vim.diagnostic.goto_prev()<CR>", { noremap = tr
 nnoremap("<leader>d]", "<cmd>lua vim.diagnostic.goto_next()<CR>", { noremap = true, silent = true })
 nnoremap("<leader>dd", "<cmd>Telescope diagnostics<CR>", { noremap = true, silent = true })
 inoremap("<A-h>", "<cmd>lua vim.lsp.buf.signature_help()<CR>")
+nnoremap('<leader>rn', "<cmd>lua vim.lsp.buf.rename()<CR>")
+nnoremap('<leader>ds', function()
+    require('telescope.builtin').lsp_document_symbols()
+end)
+nnoremap('<leader>ws', function()
+    require('telescope.builtin').lsp_dynamic_workspace_symbols()
+end)
 
 	-- vim.api.nvim_buf_set_keymap(bufnr, "i", "<C-,>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
 -- DAP debug

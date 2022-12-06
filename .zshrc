@@ -79,7 +79,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump poetry zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git autojump poetry autoswitch_virtualenv zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -119,8 +119,6 @@ source $ZSH/oh-my-zsh.sh
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-
-export PATH="$HOME/.poetry/bin:$PATH"
 
 HISTTIMEFORMAT="%Y-%m-%d %T "
 export PATH="/opt/homebrew/opt/gnupg@2.2/bin:$PATH"
@@ -163,6 +161,7 @@ alias g=git
 alias v=nvim
 alias cat=bat
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias tx=tmuxinator
 
 
 source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"

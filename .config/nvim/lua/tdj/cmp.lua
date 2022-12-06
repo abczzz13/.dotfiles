@@ -50,11 +50,67 @@ local kind_icons = {
   TypeParameter = "",
 }
 
---[[
 local lspkind = require "lspkind"
 lspkind.init()
-]]
 
+cmp.setup({
+    snippet = {
+        expand = function(args)
+            luasnip.lsp_expand(args.body)
+        end,
+    },
+    mapping = {
+        ["<C-j>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert },
+        ["<C-k>"] = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Insert },
+        ["<C-d>"] = cmp.mapping.scroll_docs(-4),
+        ["<C-f>"] = cmp.mapping.scroll_docs(4),
+        ["<C-e>"] = cmp.mapping.abort(),
+        ["<C-y>"] = cmp.mapping(
+            cmp.mapping.confirm {
+                behavior = cmp.ConfirmBehavior.Insert,
+                select = true
+            },
+            { "i", "c" }
+        ),
+        ["<C-space>"] = cmp.mapping {
+            i = cmp.mapping.complete(),
+            c = function(
+                _ --fallback
+            )
+                if cmp.visible() then
+                    if not cmp.confirm { select = true } then
+                        return
+                    end
+                else
+                    cmp.complete()
+                end
+            end,
+        },
+        ["<tab>"] = cmp.config.disable,
+        ["<C-q>"] = cmp.mapping.confirm {
+            behavior = cmp.ConfirmBehavior.Replace,
+            select = true,
+        }
+    },
+    sources = {
+        { name = 'nvim_lsp' },
+        { name = 'nvim_lua' },
+        { name = 'treesitter' },
+    },
+    formatting = {
+        format = lspkind.cmp_format({
+            maxwidth = 50,
+            menu = ({
+                buffer = "[Buffer]",
+                nvim_lsp = "[LSP]",
+                nvim_lua = "[Lua]",
+                treesitter = "[TS]",
+            }),
+            with_text = true
+        }),
+    }
+})
+--[[
 cmp.setup {
     snippet = {
         expand = function(args)
@@ -77,7 +133,7 @@ cmp.setup {
         ["<C-space>"] = cmp.mapping {
             i = cmp.mapping.complete(),
             c = function(
-                _ -- [[fallback]]
+                _ --fallback
             )
                 if cmp.visible() then
                     if not cmp.confirm { select = true } then
@@ -102,21 +158,6 @@ cmp.setup {
         { name = "path" },
         -- { name = "cmdline" },
     },
-    --[[
-    formatting = {
-        format = lspkind.cmp_format {
-            with_text = true,
-            menu = {
-                buffer = "[buf]",
-                nvim_lsp = "[LSP]",
-                nvim_lua = "[api]",
-                path = "[path]",
-                luasnip = "[snip]",
-                cmdline = "[cmd]",
-            },
-        },
-    },
-    ]]
     formatting = {
         fields = { "kind", "abbr", "menu" },
         format = function(entry, vim_item)
@@ -146,6 +187,7 @@ cmp.setup {
         ghost_text = false,
     },
 }
+]]
 
 cmp.setup.cmdline(':', {
     mapping = cmp.mapping.preset.cmdline(),
