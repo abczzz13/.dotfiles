@@ -1,13 +1,13 @@
 local Remap = require("tdj.keymap")
 local nnoremap = Remap.nnoremap
 
-nnoremap("<C-p>", ":Telescope<CR>")
+-- nnoremap("<C-p>", ":Telescope<CR>")
 nnoremap("<leader>ps", function()
     require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})
 end)
---[[ nnoremap("<C-p>", function() ]]
---[[     require('telescope.builtin').git_files() ]]
---[[ end) ]]
+nnoremap("<C-p>", function()
+    require('telescope.builtin').git_files({})
+end)
 nnoremap("<leader>pf", function()
     require('telescope.builtin').find_files()
 end)
@@ -68,7 +68,7 @@ end, { desc = '[/] Fuzzily search in current buffer]' })
 --[[
 vim.api.nvim_set_keymap(
     "n",
-    "<F4>",  
+    "<F4>",
     "<cmd>:lua require('tdj.telescope').reload()<CR>",
     { noremap = true, silent = true }
 )

@@ -1,0 +1,15 @@
+pane	dse-authorizations	1	1	:*	0	thomasdejong@Thomass-MBP:~/.config	:/Users/thomasdejong/.config	1	zsh	:
+pane	dse-session	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/dse-session/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-session/master	1	zsh	:
+pane	kpn_eid	1	1	:*	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	kpn_eid	1	1	:*	1	thomasdejong@Thomass-MBP:~/Projects/Elements	:/Users/thomasdejong/Projects/Elements	0	zsh	:
+pane	learning	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/learning	:/Users/thomasdejong/Projects/learning	1	zsh	:
+pane	nvim	1	1	:*	0	thomasdejong@Thomass-MBP:~/.config/nvim	:/Users/thomasdejong/.config/nvim	1	zsh	:
+pane	nvim	1	1	:*	1	nvim /Users/thomasdejong/.local/bin/tmux-fzf-sessions	:/Users/thomasdejong/.config/nvim	0	nvim	:nvim /Users/thomasdejong/.local/bin/tmux-fzf-sessions
+pane	smoke-tests	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/smoke-tests	:/Users/thomasdejong/Projects/Elements/kpn_eid/smoke-tests	1	zsh	:
+window	dse-authorizations	1	:zsh	1	:*	e6a5,252x67,0,0,26	:
+window	dse-session	1	:zsh	1	:*	e6a7,252x67,0,0,28	:
+window	kpn_eid	1	:zsh	1	:*	20f2,252x67,0,0{126x67,0,0,29,125x67,127,0,30}	:
+window	learning	1	:zsh	1	:*	66a5,252x67,0,0,54	:
+window	nvim	1	:zsh	1	:*	60ef,252x67,0,0{126x67,0,0,31,125x67,127,0,32}	:
+window	smoke-tests	1	:zsh	1	:*	66a3,252x67,0,0,33	:
+state	learning	smoke-tests

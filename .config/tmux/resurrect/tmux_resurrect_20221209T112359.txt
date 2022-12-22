@@ -1,0 +1,90 @@
+pane	17	1	0	:-	0	thomasdejong@Thomass-MBP:~/.config/tmux	:/Users/thomasdejong/.config/tmux	1	zsh	:
+pane	17	2	1	:*	0	thomasdejong@Thomass-MBP:~/.config/tmux	:/Users/thomasdejong/.config/tmux	0	zsh	:
+pane	17	2	1	:*	1	Thomass-MBP.localdomain	:/Users/thomasdejong/.config/tmux	1	bash	:/opt/homebrew/bin/fzf --no-height --bind=ctrl-z:ignore
+pane	18	1	1	:*	0	thomasdejong@Thomass-MBP:~/.config/tmux	:/Users/thomasdejong/.config/tmux	1	zsh	:
+pane	18	1	1	:*	1	nvim .	:/Users/thomasdejong/.local/bin	0	nvim	:nvim .
+pane	18	2	0	:-	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	33	1	1	:*	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	36	1	1	:*	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	assignments	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/Elements/assignments/20221207 Backend Senior	:/Users/thomasdejong/Projects/Elements/assignments/20221207\ Backend Senior	1	zsh	:nvim
+pane	assignments	1	1	:*	1	thomasdejong@Thomass-MBP:~/Projects/Elements/assignments/20221207 Backend Senior	:/Users/thomasdejong/Projects/Elements/assignments/20221207\ Backend Senior	0	zsh	:
+pane	assignments	1	1	:*	2	thomasdejong@Thomass-MBP:~/Projects/Elements/assignments/20221207 Backend Senior	:/Users/thomasdejong/Projects/Elements/assignments/20221207\ Backend Senior	0	zsh	:nvim
+pane	backend-rewrite	1	1	:*	0	nvim .	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-stress-test/makefile	1	nvim	:nvim .
+pane	backend-rewrite	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/stembureau-stress-test/makefile	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-stress-test/makefile	0	zsh	:nvim .
+pane	bff	1	1	:*	0	nvim	:/Users/thomasdejong/Projects/Elements/kpn_eid/bff	0	nvim	:nvim
+pane	bff	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/bff	:/Users/thomasdejong/Projects/Elements/kpn_eid/bff	0	zsh	:
+pane	bff	1	1	:*	2	nvim .	:/Users/thomasdejong/Projects/Elements/kpn_eid/bff	1	nvim	:nvim .
+pane	bfm	1	1	:*	0	nvim	:/Users/thomasdejong/Projects/Elements/kpn_eid/bfm	1	nvim	:nvim
+pane	daily	1	1	:*	0	nvim .	:/Users/thomasdejong/zettelkasten/daily	1	nvim	:nvim .
+pane	deploy	1	1	:*	0	sops ansible/inventory/clients/ehk4-test/values.yaml	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy/master	1	python	:/Users/thomasdejong/Library/Application Support/pypoetry/venv/bin/python /Users/thomasdejong/.local/bin/poetry shell
+pane	deploy	1	1	:*	1	nvim	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy	0	nvim	:nvim
+pane	dse-authorizations	1	1	:*	0	thomasdejong@Thomass-MBP:~/.config	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-authorizations/client/dse_authorizations	1	python	:/Users/thomasdejong/Library/Application Support/pypoetry/venv/bin/python /Users/thomasdejong/.local/bin/poetry shell
+pane	dse-authorizations	1	1	:*	1	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/dse-authorizations	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-authorizations	0	zsh	:
+pane	dse-service-catalogue	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/dse-service-catalogue	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-service-catalogue	1	python	:/Users/thomasdejong/Library/Application Support/pypoetry/venv/bin/python /Users/thomasdejong/.local/bin/poetry shell
+pane	dse-service-catalogue	1	1	:*	1	nvim .	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-service-catalogue	0	nvim	:nvim .
+pane	dse-session	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/dse-session/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-session/master	1	python	:/Users/thomasdejong/Library/Application Support/pypoetry/venv/bin/python /Users/thomasdejong/.local/bin/poetry shell
+pane	dse-session	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/dse-session/new_infra/helm-new	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-session/new_infra/helm-new	0	zsh	:
+pane	dse-session	1	1	:*	2	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/dse-session/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-session/master	0	zsh	:
+pane	eid-python	1	1	:*	0	nvim .	:/Users/thomasdejong/Projects/Elements/kpn_eid/eid-python/dse.django	1	python	:/Users/thomasdejong/Library/Application Support/pypoetry/venv/bin/python /Users/thomasdejong/.local/bin/poetry shell
+pane	kpn_eid	1	1	:*	0	thomasdejong@Thomass-MBP:~/.config/tmux	:/Users/thomasdejong/.config/tmux	1	zsh	:
+pane	kpn_eid	1	1	:*	1	thomasdejong@Thomass-MBP:~/.local/bin	:/Users/thomasdejong/.local/bin	0	zsh	:
+pane	kpn_eid	2	0	:	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid	:/Users/thomasdejong/Projects/Elements/kpn_eid	1	zsh	:
+pane	kpn_eid	3	0	:	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid	:/Users/thomasdejong/Projects/Elements/kpn_eid	1	zsh	:
+pane	kpn_eid	4	0	:-	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid	:/Users/thomasdejong/Projects/Elements/kpn_eid	1	zsh	:
+pane	kpn_eid	5	0	:	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid	:/Users/thomasdejong/Projects/Elements/kpn_eid	1	zsh	:
+pane	kpn_eid	6	0	:	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid	:/Users/thomasdejong/Projects/Elements/kpn_eid	1	zsh	:
+pane	learning	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/learning	:/Users/thomasdejong/Projects/learning/advent_of_code_2022/day_5	1	nvim	:nvim
+pane	learning	1	1	:*	1	nvim .	:/Users/thomasdejong/Projects/learning/advent_of_code_2022	0	nvim	:nvim .
+pane	learning	1	1	:*	2	thomasdejong@Thomass-MBP:~/Projects/learning/advent_of_code_2022/day_5	:/Users/thomasdejong/Projects/learning/advent_of_code_2022/day_5	0	zsh	:
+pane	libary	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid	:/Users/thomasdejong/Projects/Elements/kpn_eid	1	zsh	:
+pane	meusterwette	1	1	:*	0	nvim .	:/Users/thomasdejong/Projects/abczzz13/meusterwette	1	nvim	:nvim .
+pane	meusterwette	1	1	:*	1	thomasdejong@Thomass-MBP:~/Projects/abczzz13/meusterwette	:/Users/thomasdejong/Projects/abczzz13/meusterwette	0	zsh	:
+pane	nvim	1	1	:*	0	thomasdejong@Thomass-MBP:~/.config/nvim	:/Users/thomasdejong/.config/nvim	1	nvim	:nvim
+nvim
+pane	nvim	1	1	:*	1	nvim /Users/thomasdejong/.local/bin/tmux-fzf-sessions	:/Users/thomasdejong/Projects/learning/algorithms/sort	0	nvim	:nvim
+nvim
+pane	part-up	1	1	:*	0	nvim	:/Users/thomasdejong/Projects/Elements	1	nvim	:nvim
+pane	smoke-tests	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/smoke-tests	:/Users/thomasdejong/Projects/Elements/kpn_eid/smoke-tests/simplification/helm-new	1	zsh	:
+pane	smoke-tests	1	1	:*	1	nvim	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-session/new_infra	0	nvim	:nvim
+pane	stembureau-reverse-proxy	1	1	:*	0	nvim .	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-reverse-proxy	1	nvim	:nvim .
+pane	stembureau-reverse-proxy	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/stembureau-reverse-proxy	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-reverse-proxy	0	zsh	:
+pane	stembureau-stress-test	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/stembureau-stress-test/master	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-stress-test/master	1	zsh	:
+pane	stembureau-stress-test	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/stembureau-stress-test/makefile	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-stress-test/makefile	0	zsh	:
+pane	templates	1	1	:*	0	thomasdejong@Thomass-MBP:~/zettelkasten	:/Users/thomasdejong/zettelkasten	1	zsh	:
+pane	tmux	1	1	:*	0	thomasdejong@Thomass-MBP:~/.config/tmux	:/Users/thomasdejong/.config/tmux	1	zsh	:
+pane	tooling	1	1	:*	0	sops helm-new/values-tst.yaml	:/Users/thomasdejong/Projects/Elements/kpn_eid/tooling/simplification	1	sops	:sops helm-new/values-tst.yaml
+pane	tooling	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/smoke-tests/simplification/helm-new	:/Users/thomasdejong/Projects/Elements/kpn_eid/smoke-tests/simplification/helm-new	0	zsh	:nvim
+window	17	1	:zsh	0	:-	66aa,252x67,0,0,59	:
+window	17	2	:bash	1	:*	77ad,252x67,0,0[252x33,0,0,60,252x33,0,34,61]	:
+window	18	1	:zsh	1	:*	e0f1,252x67,0,0{126x67,0,0,62,125x67,127,0,63}	:
+window	18	2	:zsassfd	0	:-	e6aa,252x67,0,0,69	off
+window	33	1	:zsh	1	:*	727c,133x47,0,0,651	:
+window	36	1	:zsh	1	:*	338a,252x67,0,0,747	:
+window	assignments	1	:zsh	1	:*	a310,320x76,0,0{160x76,0,0,646,159x76,161,0[159x38,161,0,647,159x37,161,39,648]}	:
+window	backend-rewrite	1	:nvim	1	:*	4ad6,320x76,0,0{160x76,0,0,273,159x76,161,0,559}	:
+window	bff	1	:nvim	1	:*	8710,320x76,0,0{160x76,0,0,307,159x76,161,0[159x38,161,0,308,159x37,161,39,398]}	:
+window	bfm	1	:nvim	1	:*	f04a,168x44,0,0,640	:
+window	daily	1	:nvim	1	:*	f29b,320x76,0,0,242	:
+window	deploy	1	:python	1	:*	9ad4,320x76,0,0{160x76,0,0,534,159x76,161,0,608}	:
+window	dse-authorizations	1	:python	1	:*	50d0,252x67,0,0{126x67,0,0,26,125x67,127,0,113}	:
+window	dse-service-catalogue	1	:python	1	:*	8a4b,252x67,0,0{126x67,0,0,115,125x67,127,0,132}	:
+window	dse-session	1	:python	1	:*	c3d0,252x67,0,0{126x67,0,0,28,125x67,127,0[125x33,127,0,330,125x33,127,34,742]}	:
+window	eid-python	1	:python	1	:*	f29f,320x76,0,0,265	:
+window	kpn_eid	1	:zsh	1	:*	20f2,252x67,0,0{126x67,0,0,29,125x67,127,0,30}	:
+window	kpn_eid	2	:eid	0	:	66a7,252x67,0,0,94	off
+window	kpn_eid	3	:zsh	0	:	66a8,252x67,0,0,95	:
+window	kpn_eid	4	:eid clstr	0	:-	66a9,252x67,0,0,96	off
+window	kpn_eid	5	:sba clstr	0	:	66aa,252x67,0,0,97	off
+window	kpn_eid	6	:sba	0	:	66ab,252x67,0,0,98	off
+window	learning	1	:nvim	1	:*	b3d0,252x67,0,0{126x67,0,0,54,125x67,127,0[125x33,127,0,107,125x33,127,34,572]}	:
+window	libary	1	:zsh	1	:*	738a,252x67,0,0,258	:
+window	meusterwette	1	:nvim	1	:*	6a4e,252x67,0,0{126x67,0,0,596,125x67,127,0,605}	:
+window	nvim	1	:nvim	1	:*	d0d1,252x67,0,0{126x67,0,0,31,125x67,127,0,655}	:
+window	part-up	1	:nvim	1	:*	72a1,320x76,0,0,694	:
+window	smoke-tests	1	:zsh	1	:*	70d3,252x67,0,0{126x67,0,0,33,125x67,127,0,719}	:
+window	stembureau-reverse-proxy	1	:nvim	1	:*	dad4,320x76,0,0{160x76,0,0,564,159x76,161,0,565}	:
+window	stembureau-stress-test	1	:zsh	1	:*	cad2,320x76,0,0{160x76,0,0,406,159x76,161,0,552}	:
+window	templates	1	:zsh	1	:*	f321,320x67,0,0,457	:
+window	tmux	1	:zsh	1	:*	b381,252x67,0,0,102	:
+window	tooling	1	:sops	1	:*	fa4d,252x67,0,0{126x67,0,0,691,125x67,127,0,692}	:
+state	kpn_eid	18

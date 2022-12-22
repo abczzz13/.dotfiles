@@ -1,0 +1,55 @@
+pane	1	0	1	:*	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	10	1	1	:*	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	2	0	1	:*	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	3	0	1	:*	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	31	1	1	:*	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	5	0	1	:*	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	6	1	1	:*	0	thomasdejong@Thomass-MBP:~/.config	:/Users/thomasdejong/.config	1	zsh	:
+pane	6	1	1	:*	1	nvim .config/tmux/tmux.conf	:/Users/thomasdejong	0	nvim	:nvim .config/tmux/tmux.conf
+pane	6	1	1	:*	2	thomasdejong@Thomass-MBP:~/Projects/abczzz13/meusterwette	:/Users/thomasdejong/Projects/abczzz13/meusterwette	0	zsh	:
+pane	6	2	0	:-	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/dse-service-catalogue	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-service-catalogue	0	zsh	:
+pane	6	2	0	:-	1	nvim .	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-service-catalogue	1	nvim	:nvim .
+pane	6	2	0	:-	2	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/dse-service-catalogue	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-service-catalogue	0	zsh	:
+pane	6	3	0	:	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	6	4	0	:	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	6	4	0	:	1	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	0	zsh	:
+pane	6	4	0	:	2	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	0	zsh	:
+pane	6	5	0	:	0	thomasdejong@Thomass-MBP:~/Projects/Elements/stembureauapp/backend-rewrite	:/Users/thomasdejong/Projects/Elements/stembureauapp/backend-rewrite	1	zsh	:
+pane	6	5	0	:	1	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	0	zsh	:
+pane	6	5	0	:	2	nvim .	:/Users/thomasdejong/Projects/Elements/stembureauapp/backend-rewrite	0	nvim	:nvim .
+pane	6	6	0	:	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	6	6	0	:	1	nvim .	:/Users/thomasdejong/Projects/Elements/stembureauapp/backend-rewrite	0	nvim	:nvim .
+pane	6	6	0	:	2	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	0	zsh	:
+pane	7	1	1	:*	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	8	1	1	:*	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	9	1	1	:*	0	thomasdejong@Thomass-MBP:~	:/Users/thomasdejong	1	zsh	:
+pane	dse-authorizations	1	1	:*	0	thomasdejong@Thomass-MBP:~/.config	:/Users/thomasdejong/.config	1	zsh	:
+pane	dse-authorizations	2	0	:	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/dse-authorizations	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-authorizations	1	zsh	:
+pane	dse-session	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/dse-session/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-session/master	1	zsh	:
+pane	kpn_eid	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid	:/Users/thomasdejong/Projects/Elements/kpn_eid	1	zsh	:
+pane	kpn_eid	1	1	:*	1	thomasdejong@Thomass-MBP:~/Projects/Elements	:/Users/thomasdejong/Projects/Elements	0	zsh	:
+pane	nvim	1	1	:*	0	thomasdejong@Thomass-MBP:~/.config/nvim	:/Users/thomasdejong/.config/nvim	1	zsh	:
+pane	nvim	1	1	:*	1	nvim ~/.local/bin/tmux-fzf-sessions	:/Users/thomasdejong/.config/nvim	0	nvim	:nvim /Users/thomasdejong/.local/bin/tmux-fzf-sessions
+pane	smoke-tests	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/smoke-tests	:/Users/thomasdejong/Projects/Elements/kpn_eid/smoke-tests	1	zsh	:
+window	1	0	:zsh	1	:*	e6aa,252x67,0,0,69	:
+window	10	1	:zsh	1	:*	66a2,252x67,0,0,70	:
+window	2	0	:zsh	1	:*	66a3,252x67,0,0,71	:
+window	3	0	:zsh	1	:*	66a4,252x67,0,0,72	:
+window	31	1	:zsh	1	:*	3380,252x67,0,0,110	:
+window	5	0	:zsh	1	:*	66a5,252x67,0,0,73	:
+window	6	1	:general	1	:*	bfc0,252x67,0,0{126x67,0,0,74,125x67,127,0[125x33,127,0,75,125x33,127,34,76]}	off
+window	6	2	:eid	0	:-	dfc4,252x67,0,0{126x67,0,0,77,125x67,127,0[125x33,127,0,78,125x33,127,34,79]}	off
+window	6	3	:eid	0	:	e6a2,252x67,0,0,80	off
+window	6	4	:eid-cluster	0	:	4fbd,252x67,0,0{126x67,0,0,81,125x67,127,0[125x33,127,0,82,125x33,127,34,83]}	off
+window	6	5	:sba	0	:	6fc1,252x67,0,0{126x67,0,0,84,125x67,127,0[125x33,127,0,85,125x33,127,34,86]}	off
+window	6	6	:sba-cluster	0	:	8fc5,252x67,0,0{126x67,0,0,87,125x67,127,0[125x33,127,0,88,125x33,127,34,89]}	off
+window	7	1	:zsh	1	:*	66a3,252x67,0,0,90	:
+window	8	1	:zsh	1	:*	66a4,252x67,0,0,91	:
+window	9	1	:zsh	1	:*	66a5,252x67,0,0,92	:
+window	dse-authorizations	1	:zsh	1	:*	e6a7,252x67,0,0,66	:
+window	dse-authorizations	2	:ls	0	:	e6a9,252x67,0,0,68	off
+window	dse-session	1	:zsh	1	:*	e6a8,252x67,0,0,67	:
+window	kpn_eid	1	:zsh	1	:*	e0f3,252x67,0,0{126x67,0,0,64,125x67,127,0,65}	:
+window	nvim	1	:zsh	1	:*	60f7,252x67,0,0{126x67,0,0,96,125x67,127,0,97}	:
+window	smoke-tests	1	:zsh	1	:*	66a7,252x67,0,0,94	:
+state	31	

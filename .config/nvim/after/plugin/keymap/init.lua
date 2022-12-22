@@ -9,16 +9,18 @@ local nmap = Remap.nmap
 -- Personal remaps
 nnoremap("<leader>pv", "<cmd>Ex<CR>")
 inoremap("jk", "<esc>")
+inoremap("<C-c", "<esc>")
 nnoremap("<leader>lf", ":lua vim.lsp.buf.format()<CR>")
 
 -- ThePrimeagen remaps: special Paste, Yank and Delete
 xnoremap("<leader>p", "\"_dP")
 
 nnoremap("<leader>y", "\"+y")
+nnoremap("<leader>Y", "\"+Y")
 vnoremap("<leader>y", "\"+y")
 nmap("<leader>y", "\"+y")
 
-nnoremap("<leader>d", "\"_+d")
+nnoremap("<leader>d", "\"_d")
 vnoremap("<leader>d", "\"_d")
 
 -- Smooth scrollign with Ctrl d/u
@@ -33,6 +35,9 @@ nnoremap("<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 
 nnoremap("<leader>e", ":NvimTreeToggle<CR>")
 
+-- Make file executable
+nnoremap("<leader>x", ":!chmod +x %<CR>", { silent = true })
+
 --[[Resize with arrows
 nnoremap("C-Up", ":resize +2<CR>")
 nnoremap("C-Down", ":resize -2<CR>")
@@ -44,6 +49,12 @@ nnoremap("C-Right", ":vertical resize +2<CR>")
 nnoremap("<S-l>",":bnext<CR>")
 nnoremap("<S-h>",":bprevious<CR>")
 
+nnoremap("<C-k>", ":cnext<CR>zz")
+nnoremap("<C-j>", ":cprev<CR>zz")
+
+nnoremap("<leader>k", ":lnext<CR>zz")
+nnoremap("<leader>j", ":lprev<CR>zz")
+
 -- Stay in indent mode
 vnoremap("<", "<gv")
 vnoremap(">", ">gv")
@@ -54,10 +65,13 @@ vnoremap("<A-k>", ":m .-2<CR>==")
 -- vnoremap("p", '"_dP') -- see if I like it
 
 -- Move text up and down in Visual Block
-xnoremap("J", ":move '>+1<CR>gv-gv")
-xnoremap("K", ":move '<-2<CR>gv-gv")
-xnoremap("<A-j>", ":move '>+1<CR>gv-gv")
-xnoremap("<A-k>", ":move '<-2<CR>gv-gv")
+xnoremap("<C-l>", ":move '>+1<CR>gv=gv")
+xnoremap("<C-;", ":move '<-2<CR>gv=gv")
+xnoremap("<A-j>", ":move '>+1<CR>gv=gv")
+xnoremap("<A-k>", ":move '<-2<CR>gv=gv")
+
+vnoremap("K", ":move '<-2<CR>gv=gv")
+vnoremap("J", ":move '>+1<CR>gv=gv")
 
 -- LSP Diagnostics
 nnoremap("<leader>do", "<cmd>lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true })
@@ -75,4 +89,5 @@ end)
 
 	-- vim.api.nvim_buf_set_keymap(bufnr, "i", "<C-,>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
 -- DAP debug
-nnoremap("<leader><CR>", "<cmd>:lua require'dap'.continue()<CR>")
+nnoremap("<leader><cr>", "<cmd>:lua require'dap'.continue()<cr>")
+nnoremap("<leader>da", "<cmd>:lua require('dapui').toggle()<cr>")

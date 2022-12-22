@@ -1,5 +1,5 @@
 vim.opt.completeopt = "menuone,noselect"
-vim.opt.breakindent = false
+vim.opt.breakindent = true
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.tabstop = 4
@@ -33,3 +33,4 @@ vim.opt.smartcase = true
 vim.opt.guicursor = ""
 vim.opt.errorbells = false
 vim.wo.signcolumn = "yes"
+vim.opt.isfname:append("@-@")

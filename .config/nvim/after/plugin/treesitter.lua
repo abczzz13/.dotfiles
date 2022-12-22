@@ -4,15 +4,15 @@ if not status_ok then
 end
 
 configs.setup {
-    ensure_installed = { "python", "lua", "rust", "bash", "gitignore", "gitattributes", "go", "html", "json", "sql", "toml", "vim", "yaml"},
+    ensure_installed = { "python", "lua", "rust", "bash", "gitignore", "gitattributes", "go", "html", "json", "sql", "toml", "vim", "yaml", "help" },
     sync_install = false,
-    ignore_install = { "phpdoc" },
+    auto_install = true,
     autopairs = {
         enable = true,
     },
     highlight = {
         enable = true,
-        additional_vim_regex_highlighting = true,
+        additional_vim_regex_highlighting = false,
     },
     indent = {
         enable = true,
