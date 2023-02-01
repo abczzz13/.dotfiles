@@ -155,13 +155,26 @@ source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
 
 export KUBECONFIG="$HOME/.kube/configs/eh3-test/config:$HOME/.kube/configs/ehk3-acceptance/config:$HOME/.kube/configs/ehk4-test/config:$HOME/.kube/configs/stembureauapp/config:$HOME/.kube/configs/sba-elements/config"
 
+gw () {
+  local out
+  out=$(
+    git worktree list |
+    fzf-tmux -p --header Worktree --reverse  --preview='git log --oneline -n10 {2}' |
+    awk '{print $1}'
+  )
+  cd $out
+}
+
 alias k=kubectl
 alias d=docker
+alias dc=docker-compose
 alias g=git
+alias gs="git status -s"
+alias gb="git branch --sort=-committerdate | fzf-tmux -p --reverse --header Checkout --preview 'git diff {-1} --color=always' --pointer='' | tr -d '+*' | xargs git checkout"
 alias v=nvim
 alias cat=bat
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias tx=tmuxinator
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias f="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
 
 
 source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"

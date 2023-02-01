@@ -16,6 +16,7 @@ function SetColorScheme(color)
     if color == "tokyonight" then
         vim.cmd[[highlight CursorlineNr guifg=000000]]
         vim.cmd[[highlight LineNr guifg=#b2b2b2]]
+        -- vim.cmd[[highlight DiffChange guibg=blue]]
     end
 
     -- Set transparancy

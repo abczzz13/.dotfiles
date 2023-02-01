@@ -1,0 +1,109 @@
+pane	29	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	36	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	37	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	39	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	40	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	41	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	42	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	43	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	44	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	45	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	1	zsh	:
+pane	assignments	1	1	:*	0	nvim	:/Users/thomasdejong/Projects/Elements/assignments/20221207\ Backend Senior	1	nvim	:nvim
+pane	assignments	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/assignments/20221207 Backend Senior	:/Users/thomasdejong/Projects/Elements/assignments/20221207\ Backend Senior	0	zsh	:
+pane	assignments	1	1	:*	2	nvim	:/Users/thomasdejong/Projects/Elements/assignments/20221207\ Backend Senior	0	nvim	:nvim
+pane	backend-rewrite	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/backend-rewrite/update-memcached-chart/helm	:/Users/thomasdejong/Projects/Elements/stembureauapp/backend-rewrite/update-memcached-chart/helm	1	zsh	:
+pane	backend-rewrite	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/backend-rewrite/master	:/Users/thomasdejong/Projects/Elements/stembureauapp/backend-rewrite/master	0	zsh	:
+pane	bff	1	1	:*	0	nvim	:/Users/thomasdejong/Projects/Elements/kpn_eid/bff/master	1	nvim	:nvim
+pane	bff	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/bff/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/bff/master	0	zsh	:
+pane	bff	2	0	:-	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/bff	:/Users/thomasdejong/Projects/Elements/kpn_eid/bff	1	zsh	:
+pane	bfm	1	1	:*	0	nvim	:/Users/thomasdejong/Projects/Elements/kpn_eid/bfm/master/helm-new	1	nvim	:nvim
+pane	bfm	1	1	:*	1	nvim	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-authorizations/master	0	nvim	:nvim
+pane	bfw	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/Elements/kpn_eid/bfw/master/helm-new	:/Users/thomasdejong/Projects/Elements/kpn_eid/bfw/master/helm-new	1	zsh	:
+pane	bfw	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/bfw/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/bfw/master	0	zsh	:
+pane	deploy	1	1	:*	0	sops ansible/inventory/clients/ehk4-test/values.yaml	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy/master	1	sops	:sops ansible/inventory/clients/ehk4-test/values.yaml
+pane	deploy	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/deploy/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/deploy/master	0	zsh	:
+pane	dse-authorizations	1	1	:*	0	nvim	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-authorizations/master/helm-new	1	nvim	:nvim
+pane	dse-authorizations	1	1	:*	1	nvim	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-authorizations/master	0	nvim	:nvim
+pane	dse-service-catalogue	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/dse-service-catalogue/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-service-catalogue/master	1	python	:/Users/thomasdejong/Library/Application Support/pypoetry/venv/bin/python /Users/thomasdejong/.local/bin/poetry shell
+pane	dse-service-catalogue	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/dse-authorizations/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-authorizations/master	0	zsh	:
+pane	dse-session	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/dse-session/amp-certificates	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-session/amp-certificates	1	zsh	:
+pane	dse-session	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/bff/amp-certificates	:/Users/thomasdejong/Projects/Elements/kpn_eid/bff/amp-certificates	0	zsh	:
+pane	dse-session	1	1	:*	2	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/dse-session/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/dse-session/master	0	zsh	:
+pane	eid-python	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/eid-python/oauth2-kdoc/dse.streamserve	:/Users/thomasdejong/Projects/Elements/kpn_eid/eid-python/oauth2-kdoc/dse.streamserve	0	zsh	:
+pane	eid-python	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/eid-python/oauth2-kdoc	:/Users/thomasdejong/Projects/Elements/kpn_eid/eid-python/oauth2-kdoc	1	zsh	:
+pane	frontend-rewrite	1	1	:*	0	thomasdejong@Thomass-MBP:~/Projects/Elements/stembureauapp/frontend-rewrite/helm	:/Users/thomasdejong/Projects/Elements/stembureauapp/frontend-rewrite/helm	1	zsh	:
+pane	frontend-rewrite	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/frontend-rewrite/helm	:/Users/thomasdejong/Projects/Elements/stembureauapp/frontend-rewrite/helm	0	zsh	:
+pane	infrastructure	1	1	:*	0	stern 'egress' -n istio-system	:/Users/thomasdejong/Projects/Elements/kpn_eid/infrastructure/master	1	stern	:stern egress -n istio-system
+pane	learning	1	1	:*	0	nvim	:/Users/thomasdejong/Projects/learning/algorithms/linked_list	1	nvim	:nvim
+pane	learning	1	1	:*	1	nvim .	:/Users/thomasdejong/Projects/learning/advent_of_code_2022	0	nvim	:nvim .
+pane	learning	1	1	:*	2	thomasdejong@Thomass-MacBook-Pro:~/Projects/learning/algorithms/linked_list	:/Users/thomasdejong/Projects/learning/algorithms/linked_list	0	zsh	:
+pane	libary	1	1	:*	0	nvim	:/Users/thomasdejong/Projects/Elements/kpn_eid/python/removing-venv	0	nvim	:nvim
+pane	libary	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/python-app/removing-venv	:/Users/thomasdejong/Projects/Elements/kpn_eid/python-app/removing-venv	1	zsh	:
+pane	meusterwette	1	1	:*	0	nvim .	:/Users/thomasdejong/Projects/abczzz13/meusterwette	1	nvim	:nvim .
+pane	meusterwette	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/abczzz13/meusterwette	:/Users/thomasdejong/Projects/abczzz13/meusterwette	0	zsh	:
+pane	migration	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/migration/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/migration/master	1	zsh	:
+pane	nvim	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/bff/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/bff/master	1	zsh	:
+pane	nvim	1	1	:*	1	nvim ~/.zshrc	:/Users/thomasdejong	0	nvim	:nvim /Users/thomasdejong/.zshrc
+pane	part-up	1	1	:*	0	nvim	:/Users/thomasdejong/Projects/Elements	1	nvim	:nvim
+pane	python	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/python/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/python/master	1	zsh	:
+pane	python-app	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/python-app/upgrade-python-to-3.8.16	:/Users/thomasdejong/Projects/Elements/kpn_eid/python-app/upgrade-python-to-3.8.16	1	zsh	:
+pane	python-app	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid	:/Users/thomasdejong/Projects/Elements/kpn_eid	0	zsh	:
+pane	python-test	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/python-test/master	:/Users/thomasdejong/Projects/Elements/kpn_eid/python-test/master	1	zsh	:
+pane	seizure-detection	1	1	:*	0	nvim	:/Users/thomasdejong/workspaces/seizure-detection/tdj	1	nvim	:nvim
+pane	seizure-detection	1	1	:*	1	nvim	:/Users/thomasdejong/workspaces/seizure-detection/tdj	0	nvim	:nvim
+pane	smoke-tests	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/smoke-tests/master/helm-new	:/Users/thomasdejong/Projects/Elements/kpn_eid/smoke-tests/master/helm-new	1	zsh	:
+pane	smoke-tests	1	1	:*	1	nvim	:/Users/thomasdejong/Projects/Elements/kpn_eid/smoke-tests/add_ca_cert	0	nvim	:nvim
+pane	stembureau-backend	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/stembureau-backend/master	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-backend/master	1	zsh	:
+pane	stembureau-backend	1	1	:*	1	nvim	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-backend/master/helm	0	nvim	:nvim
+pane	stembureau-reverse-proxy	1	1	:*	0	nvim .	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-reverse-proxy	1	nvim	:nvim .
+pane	stembureau-reverse-proxy	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/stembureau-reverse-proxy	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-reverse-proxy	0	zsh	:
+pane	stembureau-sentry	1	1	:*	0	nvim	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-sentry/master	1	nvim	:nvim
+pane	stembureau-sentry	1	1	:*	1	thomasdejong@Thomass-MBP:~/Projects/Elements/stembureauapp/stembureau-sentry/master	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-sentry/master	0	zsh	:
+pane	stembureau-stress-test	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/stembureauapp/stembureau-stress-test/master	:/Users/thomasdejong/Projects/Elements/stembureauapp/stembureau-stress-test/master	1	zsh	:
+pane	stembureau-stress-test	1	1	:*	1	thomasdejong@Thomass-MacBook-Pro:~	:/Users/thomasdejong	0	zsh	:
+pane	templates	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/zettelkasten	:/Users/thomasdejong/zettelkasten	1	zsh	:
+pane	tmux	1	1	:*	0	nvim	:/Users/thomasdejong/.config/tmux	1	nvim	:nvim
+pane	tooling	1	1	:*	0	thomasdejong@Thomass-MacBook-Pro:~/Projects/Elements/kpn_eid/tooling/master/helm-new	:/Users/thomasdejong/Projects/Elements/kpn_eid/tooling/master/helm-new	1	zsh	:
+pane	tooling	1	1	:*	1	nvim	:/Users/thomasdejong/Projects/Elements/kpn_eid/smoke-tests/simplification/helm-new	0	nvim	:nvim
+window	29	1	:zsh	1	:*	e4d8,320x76,0,0,86	:
+window	36	1	:zsh	1	:*	32a6,320x76,0,0,789	:
+window	37	1	:zsh	1	:*	b2a1,320x76,0,0,794	:
+window	39	1	:zsh	1	:*	f29d,320x76,0,0,833	:
+window	40	1	:zsh	1	:*	f2a1,320x76,0,0,856	:
+window	41	1	:zsh	1	:*	f2a2,320x76,0,0,857	:
+window	42	1	:zsh	1	:*	729e,320x76,0,0,862	:
+window	43	1	:zsh	1	:*	f2a1,320x76,0,0,875	:
+window	44	1	:zsh	1	:*	72a1,320x76,0,0,884	:
+window	45	1	:zsh	1	:*	329c,320x76,0,0,931	:
+window	assignments	1	:nvim	1	:*	7ca0,320x76,0,0{160x76,0,0,9,159x76,161,0[159x38,161,0,10,159x37,161,39,11]}	:
+window	backend-rewrite	1	:zsh	1	:*	183e,320x76,0,0{159x76,0,0,12,160x76,160,0,366}	:
+window	bff	1	:nvim	1	:*	d9d5,320x76,0,0{160x76,0,0,15,159x76,161,0,930}	:
+window	bff	2	:zsh	0	:-	e4d7,320x76,0,0,85	:
+window	bfm	1	:nvim	1	:*	59d8,320x76,0,0{160x76,0,0,17,159x76,161,0,573}	:
+window	bfw	1	:zsh	1	:*	59d8,320x76,0,0{160x76,0,0,82,159x76,161,0,417}	:
+window	deploy	1	:sops	1	:*	72fd,320x76,0,0{160x76,0,0,19,159x76,161,0,20}	:
+window	dse-authorizations	1	:nvim	1	:*	b2fa,320x76,0,0{160x76,0,0,21,159x76,161,0,22}	:
+window	dse-service-catalogue	1	:python	1	:*	e0f0,252x67,0,0{126x67,0,0,23,125x67,127,0,24}	:
+window	dse-session	1	:zsh	1	:*	6d2c,320x67,0,0{160x67,0,0,25,159x67,161,0[159x33,161,0,26,159x33,161,34,27]}	:
+window	eid-python	1	:zsh	1	:*	90d1,252x67,0,0{126x67,0,0,28,125x67,127,0,504}	:
+window	frontend-rewrite	1	:zsh	1	:*	3ad5,320x76,0,0{160x76,0,0,138,159x76,161,0,356}	:
+window	infrastructure	1	:[tmux]	1	:*	72a2,320x76,0,0,828	:
+window	learning	1	:nvim	1	:*	bfc0,252x67,0,0{126x67,0,0,36,125x67,127,0[125x33,127,0,37,125x33,127,34,38]}	:
+window	libary	1	:zsh	1	:*	b9d9,320x76,0,0{160x76,0,0,39,159x76,161,0,655}	:
+window	meusterwette	1	:nvim	1	:*	b2fa,320x76,0,0{160x76,0,0,40,159x76,161,0,41}	:
+window	migration	1	:zsh	1	:*	59fb,252x67,0,0,1059	:
+window	nvim	1	:zsh	1	:*	b2fc,320x76,0,0{160x76,0,0,42,159x76,161,0,43}	:
+window	part-up	1	:nvim	1	:*	e4d4,320x76,0,0,44	:
+window	python	1	:zsh	1	:*	3387,252x67,0,0,782	:
+window	python-app	1	:zsh	1	:*	6a4c,252x67,0,0{126x67,0,0,712,125x67,127,0,942}	:
+window	python-test	1	:zsh	1	:*	3385,252x67,0,0,780	:
+window	seizure-detection	1	:nvim	1	:*	da4a,252x67,0,0{126x67,0,0,672,125x67,127,0,700}	:
+window	smoke-tests	1	:zsh	1	:*	b2ff,320x76,0,0{160x76,0,0,45,159x76,161,0,46}	:
+window	stembureau-backend	1	:zsh	1	:*	9601,320x76,0,0{160x76,0,0,1124,159x76,161,0,1137}	:
+window	stembureau-reverse-proxy	1	:nvim	1	:*	b301,320x76,0,0{160x76,0,0,47,159x76,161,0,48}	:
+window	stembureau-sentry	1	:nvim	1	:*	f9d7,320x76,0,0{160x76,0,0,60,159x76,161,0,147}	:
+window	stembureau-stress-test	1	:zsh	1	:*	f2fe,320x76,0,0{160x76,0,0,49,159x76,161,0,50}	:
+window	templates	1	:zsh	1	:*	64d2,320x76,0,0,51	:
+window	tmux	1	:nvim	1	:*	f38c,252x67,0,0,688	:
+window	tooling	1	:zsh	1	:*	32fe,320x76,0,0{160x76,0,0,53,159x76,161,0,54}	:
+state	45	36
