@@ -38,6 +38,7 @@ packer.init {
 
 return packer.startup(function(use)
     use({"wbthomason/packer.nvim"})
+    use({"williamboman/mason.nvim"})
 
     -- Telescope
     use({"nvim-lua/plenary.nvim"})
@@ -61,8 +62,9 @@ return packer.startup(function(use)
 
     -- LSP
     use({"neovim/nvim-lspconfig"})
+    use({"williamboman/mason-lspconfig.nvim"})
     use({"onsails/lspkind.nvim"})
-    use({"williamboman/nvim-lsp-installer"})
+    use({"williamboman/nvim-lsp-installer"}) -- in process of replacing with mason
     use({"https://git.sr.ht/~whynothugo/lsp_lines.nvim",
         config = function()
             require("lsp_lines").setup()

@@ -46,8 +46,8 @@ nnoremap("C-Right", ":vertical resize +2<CR>")
 ]]
 
 -- Navigate buffers
-nnoremap("<S-l>",":bnext<CR>")
-nnoremap("<S-h>",":bprevious<CR>")
+nnoremap("<S-l>", ":bnext<CR>")
+nnoremap("<S-h>", ":bprevious<CR>")
 
 nnoremap("<C-k>", ":cnext<CR>zz")
 nnoremap("<C-j>", ":cprev<CR>zz")
@@ -87,7 +87,7 @@ nnoremap('<leader>ws', function()
     require('telescope.builtin').lsp_dynamic_workspace_symbols()
 end)
 
-	-- vim.api.nvim_buf_set_keymap(bufnr, "i", "<C-,>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
+-- vim.api.nvim_buf_set_keymap(bufnr, "i", "<C-,>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
 -- DAP debug
 nnoremap("<leader><cr>", "<cmd>:lua require'dap'.continue()<cr>")
 nnoremap("<leader>da", "<cmd>:lua require('dapui').toggle()<cr>")

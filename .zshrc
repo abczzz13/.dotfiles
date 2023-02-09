@@ -175,8 +175,10 @@ alias v=nvim
 alias cat=bat
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias f="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
+alias lsa="ls -larth"
 
 
 source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 PROMPT='$(kube_ps1)'$PROMPT
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+eval "$(zoxide init zsh)"

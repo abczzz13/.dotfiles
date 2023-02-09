@@ -40,11 +40,69 @@ font:
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
   save_to_clipboard: true
+
 mouse:
   hints:
     launcher:
       program: open
     modifiers: Command
+
+window:
+  # Window dimensions in character columns and lines
+  # (changes require restart)
+  dimensions:
+    columns: 0
+    lines: 0
+
+  # Adds this many blank pixels of padding around the window
+  # Units are physical pixels; this is not DPI aware.
+  # (change requires restart)
+  padding:
+    x: 2
+    y: 2
+
+  dynamic_padding: false
+  # Window decorations
+  #
+  # Available values:
+  # - `full`: Window with title bar and title bar buttons
+  # - `none`: Window without title bar, rounded corners, or drop shadow
+  # - `transparent`: Window with title bar with transparent background and title
+  #   bar buttons
+  # - `buttonless`: Window with title bar with transparent background and no
+  #   title bar buttons
+  # Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  #     - buttonless: Title bar, transparent background and title bar buttons
+  #     - transparent: Title bar, transparent background, but no title bar buttons
+  decorations: none #buttonless
+  opacity: 0.90
+  # Startup Mode (changes require restart)
+  #
+  # Values for `startup_mode`:
+  #   - Windowed
+  #   - Maximized
+  #   - Fullscreen
+  #
+  # Values for `startup_mode` (macOS only):
+  #   - SimpleFullscreen
+  startup_mode: Windowed
+
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 100000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 3
+
+  # Scroll to the bottom when new text is written to the terminal.
+  auto_scroll: false
 
 key_bindings:
   # https://github.com/alacritty/alacritty/issues/62#issuecomment-347552058
@@ -216,4 +274,3 @@ schemes:
       white:   '0xdfbf8e'
 
 colors: *gruvbox
-

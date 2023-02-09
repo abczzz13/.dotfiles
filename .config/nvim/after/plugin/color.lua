@@ -1,3 +1,11 @@
+require("tokyonight").setup {
+    transparent = true,
+    styles = {
+       sidebars = "transparent",
+       floats = "transparent",
+    }
+}
+
 function SetColorScheme(color)
     -- Fallback theme
     color = color or "tokyonight"
@@ -14,6 +22,8 @@ function SetColorScheme(color)
 
     -- Set specific colors for line numbering in tokyonight
     if color == "tokyonight" then
+        vim.cmd[[highlight Normal ctermbg=NONE guibg=NONE]]
+        vim.cmd[[highlight NvimTreeNormal ctermbg=None guibg=None]]
         vim.cmd[[highlight CursorlineNr guifg=000000]]
         vim.cmd[[highlight LineNr guifg=#b2b2b2]]
         -- vim.cmd[[highlight DiffChange guibg=blue]]
