@@ -33,7 +33,7 @@ nnoremap("N", "Nzz")
 nnoremap("<leader>u", ":UndotreeToggle<CR>:UndotreeFocus<CR>") -- :UndotreeToggle
 nnoremap("<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 
-nnoremap("<leader>e", ":NvimTreeToggle<CR>")
+nnoremap("<leader>t", ":NvimTreeToggle<CR>")
 
 -- Make file executable
 nnoremap("<leader>x", ":!chmod +x %<CR>", { silent = true })

@@ -1,4 +1,4 @@
-local status_ok, configs = pcall(require, "nvim-treesitter.configs")
+--[[ local status_ok, configs = pcall(require, "nvim-treesitter.configs")
 if not status_ok then
     return
 end
@@ -24,4 +24,4 @@ configs.setup {
     }
 }
 
-require("telescope").load_extension("git_worktree")
+require("telescope").load_extension("git_worktree") ]]

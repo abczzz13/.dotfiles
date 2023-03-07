@@ -136,6 +136,8 @@ alias vimdiff='nvim -d'
 # Created by `pipx` on 2022-09-20 11:13:25
 export PATH="$PATH:/Users/thomasdejong/.local/bin"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -171,14 +173,23 @@ alias dc=docker-compose
 alias g=git
 alias gs="git status -s"
 alias gb="git branch --sort=-committerdate | fzf-tmux -p --reverse --header Checkout --preview 'git diff {-1} --color=always' --pointer='' | tr -d '+*' | xargs git checkout"
+alias gwa="git worktree add"
 alias v=nvim
 alias cat=bat
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias f="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
 alias lsa="ls -larth"
+alias sed=gsed
 
 
 source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 PROMPT='$(kube_ps1)'$PROMPT
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 eval "$(zoxide init zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/thomasdejong/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thomasdejong/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/thomasdejong/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/thomasdejong/google-cloud-sdk/completion.zsh.inc'; fi
+eval "$(~/bin/rtx activate zsh)"

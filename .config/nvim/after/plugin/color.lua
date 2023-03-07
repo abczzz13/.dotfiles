@@ -17,7 +17,15 @@ function SetColorScheme(color)
     require("lualine").setup {
         options = {
             theme = color
-        }
+        },
+        sections = {
+            lualine_c = {
+                {
+                    "filename",
+                    path = 1,
+                }
+            },
+        },
     }
 
     -- Set specific colors for line numbering in tokyonight

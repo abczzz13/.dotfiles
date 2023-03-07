@@ -97,7 +97,7 @@ cmp.setup({
         { name = 'nvim_lua' },
         { name = 'treesitter' },
     },
-    formatting = {
+    --[[ formatting = {
         format = lspkind.cmp_format({
             maxwidth = 50,
             menu = ({
@@ -108,7 +108,7 @@ cmp.setup({
             }),
             with_text = true
         }),
-    }
+    } ]]
 })
 --[[
 cmp.setup {

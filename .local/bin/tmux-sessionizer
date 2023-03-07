@@ -1,10 +1,27 @@
 #!/usr/bin/env bash
 # With thanks to https://github.com/ThePrimeagen/.dotfiles/blob/master/bin/.local/scripts/tmux-sessionizer
 
+directories=()
+#
+# personal directories:
+directories+=(~/.config)
+directories+=(~/zettelkasten)
+directories+=(~/Projects)
+directories+=(~/Projects/abczzz13)
+directories+=(~/workspaces)
+#
+# elements directories
+directories+=(~/workspaces/elements)
+directories+=(~/workspaces/elements/avrotros/widm)
+directories+=(~/Projects/Elements)
+directories+=(~/Projects/Elements/kpn_eid)
+directories+=(~/Projects/Elements/stembureauapp)
+
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/workspaces ~/zettelkasten ~/Projects ~/Projects/Elements ~/Projects/Elements/kpn_eid ~/Projects/Elements/stembureauapp  ~/Projects/abczzz13 ~/.config -mindepth 1 -maxdepth 1 -type d | fzf-tmux -p --reverse)
+    # selected=$(find ~/workspaces ~/zettelkasten ~/Projects ~/Projects/Elements ~/Projects/Elements/kpn_eid ~/Projects/Elements/stembureauapp  ~/Projects/abczzz13 ~/.config -mindepth 1 -maxdepth 1 -type d | fzf-tmux -p --reverse)
+    selected=$(find ${directories[*]} -mindepth 1 -maxdepth 1 -type d | fzf-tmux -p --reverse)
 fi
 
 if [[ -z $selected ]]; then

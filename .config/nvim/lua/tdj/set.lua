@@ -19,6 +19,7 @@ vim.g.maplocalleader = " "
 vim.opt.clipboard = "unnamedplus"
 vim.opt.updatetime = 50
 vim.opt.timeoutlen = 300
+vim.opt.timeout = true
 vim.opt.cmdheight = 1
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -34,3 +35,4 @@ vim.opt.guicursor = ""
 vim.opt.errorbells = false
 vim.wo.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
+vim.opt.mouse = "a"
