@@ -34,6 +34,8 @@ nnoremap("<leader>u", ":UndotreeToggle<CR>:UndotreeFocus<CR>") -- :UndotreeToggl
 nnoremap("<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
 
 nnoremap("<leader>t", ":NvimTreeToggle<CR>")
+-- nnoremap("<leader>t", ":lua require('nvim-tree').setup({})<CR><cmd>NvimTreeToggle<CR>")
+
 
 -- Make file executable
 nnoremap("<leader>x", ":!chmod +x %<CR>", { silent = true })
@@ -91,3 +93,9 @@ end)
 -- DAP debug
 nnoremap("<leader><cr>", "<cmd>:lua require'dap'.continue()<cr>")
 nnoremap("<leader>da", "<cmd>:lua require('dapui').toggle()<cr>")
+
+-- Github Copilot
+-- inoremap("<C-y>", "copilot#Accept('<CR>')", { expr = true, silent = true })
+vim.api.nvim_set_keymap("i", "<C-y>", "copilot#Accept('<CR>')", { expr = true, silent = true })
+-- vim.api.nvim_set_keymap("i", "<C-j>", "copilot-next", { expr = true, silent = true })
+-- vim.api.nvim_set_keymap("i", "<C-k>", "copilot-back", { expr = true, silent = true })

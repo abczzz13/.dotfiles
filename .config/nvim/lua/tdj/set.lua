@@ -36,3 +36,4 @@ vim.opt.errorbells = false
 vim.wo.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 vim.opt.mouse = "a"
+vim.cmd("set nofixendofline")
