@@ -9,7 +9,7 @@ return {
             vim.cmd([[colorscheme tokyonight]])
         end,
     },
-    { "nvim-tree/nvim-web-devicons", version = "nerd-v2-compat" },
+    -- { "nvim-tree/nvim-web-devicons", tag = "nerd-v2-compat" },
 
     -- LSP
     {
@@ -139,20 +139,21 @@ return {
     },
 
     -- Harpoon
-    { "ThePrimeagen/harpoon",  opts = {} },
+    { "ThePrimeagen/harpoon",    opts = {} },
 
     -- NvimTree
     {
         "nvim-tree/nvim-tree.lua",
         commit = "45400cd7e02027937cd5e49845545e606ecf5a1f",
-        dependencies = { "nvim-tree/nvim-web-devicons", version = "nerd-v2-compat" },
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        -- dependencies = { "nvim-tree/nvim-web-devicons", tag = "nerd-v2-compat" },
         config = function()
             require("nvim-tree").setup({})
         end,
     },
 
     -- Bufferline
-    { "akinsho/bufferline.nvim",        opts = {} },
+    { "akinsho/bufferline.nvim", opts = {} },
 
     -- Zettelkasten
     {
@@ -206,7 +207,8 @@ return {
     -- Alpha
     {
         'goolord/alpha-nvim',
-        dependencies = { "nvim-tree/nvim-web-devicons", version = "nerd-v2-compat" },
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        -- dependencies = { "nvim-tree/nvim-web-devicons", tag = "nerd-v2-compat" },
         config = function()
             require 'alpha'.setup(require 'alpha.themes.dashboard'.config)
         end,

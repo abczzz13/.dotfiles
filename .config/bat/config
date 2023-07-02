@@ -1,8 +1,1 @@
-# Set the theme to "TwoDark"
---theme="ansi" #"gruvbox-dark"
-
-# Show line numbers, Git modifications and file header (but no grid)
---style="numbers,changes,header"
-
-# Use italic text on the terminal (not supported on all terminals)
---italic-text=always
+/nix/store/6jdsm4ghvjpqi06yqby1372v4g3q004a-home-manager-files/.config/bat/config
