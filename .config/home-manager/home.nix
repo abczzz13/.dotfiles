@@ -1,5 +1,10 @@
 { config, lib, pkgs, ... }:
 
+let
+  git-settings = import ./git.nix { inherit pkgs; };
+  tmux-settings = import ./tmux.nix { inherit pkgs; };
+  zsh-settings = import ./zsh.nix { inherit pkgs; };
+in
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -17,33 +22,34 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
-    pkgs.awscli2
-    pkgs.cmatrix
-    pkgs.cookiecutter
-    pkgs.curl
-    # pkgs.docker # need to use docker-desktop on m1!?
-    pkgs.du-dust
-    pkgs.fd
-    pkgs.gnused
-    pkgs.htop
-    pkgs.just
-    pkgs.kubernetes-helm
-    pkgs.libpqxx # for postgresql on m1
-    pkgs.minikube
-    pkgs.nmap
-    pkgs.openssl
-    pkgs.parallel
-    pkgs.pipx
-    pkgs.postgresql
-    pkgs.sops
-    pkgs.sqlite
-    pkgs.stern
-    pkgs.terraform
-    pkgs.terragrunt
-    # pkgs.tree-sitter
-    pkgs.unixtools.procps
-    pkgs.wget
+  home.packages = with pkgs; [
+    awscli2
+    cmatrix
+    cookiecutter
+    curl
+    # docker # need to use docker-desktop on m1!?
+    du-dust
+    fd
+    gnused
+    htop
+    just
+    kubernetes-helm
+    libpqxx # for postgresql on m1
+    meslo-lgs-nf
+    minikube
+    nmap
+    openssl
+    parallel
+    pipx
+    postgresql
+    sops
+    sqlite
+    stern
+    terraform
+    terragrunt
+    pkgs.tree-sitter
+    unixtools.procps
+    wget
 
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
@@ -89,7 +95,13 @@
   #
   # if you don't want to manage your shell through Home Manager.
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "nvim";
+    VISUAL = "nvim";
+    LANG = "en_US.UTF-8";
+    LC_ALL = "en_US.UTF-8";
+    LC_CTYPE = "en_US.UTF-8";
+    LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"; # for psycopg2 on m1
+    CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"; #
   };
 
   programs.jq.enable = true;
@@ -101,7 +113,6 @@
     enable = true;
     settings = lib.attrsets.recursiveUpdate (import ./alacritty.nix) {};
   };
-
 
   programs.atuin = {
     enable = true;
@@ -123,6 +134,12 @@
     };
   };
 
+  programs.broot = {
+    enable = true;
+    enableZshIntegration = true;
+    settings.modal = true;
+  };
+
   programs.exa = {
     enable = true;
     enableAliases = true;
@@ -133,7 +150,7 @@
       "--header"
       "--long"
       "--extended"
-      "--color"
+      "--color=always"
     ];
   };
 
@@ -146,6 +163,41 @@
       enableShellIntegration = true;
     };
   };
+
+  programs.git = git-settings;
+
+  # programs.neovim = {
+  #   enable = true;
+  #   viAlias = true;
+  #   vimAlias = true;
+  #   vimdiffAlias = true;
+  #   withNodeJs = true;
+  #   withPython3 = true;
+  #   extraPython3Packages = (p: with p; [
+  #     debugpy
+  #   ]);
+  #   extraLuaConfig = ''
+  #     vim.g.mapleader = " "
+  #     vim.g.maplocalleader = " "
+  #
+  #     -- Lazy.nvim setup:
+  #     local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+  #     if not vim.loop.fs_stat(lazypath) then
+  #       vim.fn.system({
+  #         "git",
+  #         "clone",
+  #         "--filter=blob:none",
+  #         "https://github.com/folke/lazy.nvim.git",
+  #         "--branch=stable", -- latest stable release
+  #         lazypath,
+  #       })
+  #     end
+  #     vim.opt.rtp:prepend(lazypath)
+  #
+  #     require("lazy").setup({ { import = "tdj.plugins" } })
+  #     require("tdj")
+  #   '';
+  # };
 
   programs.rtx = {
     enable = true;
@@ -162,21 +214,20 @@
     };
   };
 
+  programs.tmux = tmux-settings;
+
   programs.zoxide = {
     enable = true;
     enableZshIntegration = true;
   };
 
+  fonts.fontconfig.enable = true;
+  programs.zsh = zsh-settings;
+
   # To be configured:
   # programs.direnv.enable = true;
-  # programs.git.enable = true;
-  # programs.git.delta.enable = true;
   # programs.gpg.enable = true;
-  # programs.neovim.enable = true;
   # programs.ssh.enable = true;
-  # programs.tmux.enable = true;
-  # programs.zsh.enable = true;
-  # programs.zsh.oh-my-zsh.enable = true;
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
