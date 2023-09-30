@@ -1,9 +1,11 @@
 { config, lib, pkgs, ... }:
 
 let
-  git-settings = import ./git.nix { inherit pkgs; };
-  tmux-settings = import ./tmux.nix { inherit pkgs; };
-  zsh-settings = import ./zsh.nix { inherit pkgs; };
+    git-settings = import ./git.nix { inherit pkgs; };
+    tmux-settings = import ./tmux.nix { inherit pkgs; };
+    zsh-settings = import ./zsh.nix { inherit pkgs; };
+    isDarwin = pkgs.stdenv.isDarwin;
+    isLinux = pkgs.stdenv.isLinux;
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -27,14 +29,19 @@ in
     cmatrix
     cookiecutter
     curl
-    # docker # need to use docker-desktop on m1!?
     du-dust
     fd
+    google-cloud-sdk
+    gnumake
     gnused
+    go-migrate
+    golangci-lint
     htop
     just
+    k9s
+    kubectl
     kubernetes-helm
-    libpqxx # for postgresql on m1
+    kubie
     meslo-lgs-nf
     minikube
     nmap
@@ -42,18 +49,20 @@ in
     parallel
     pipx
     postgresql
+    reattach-to-user-namespace
+    rustup
     sops
     sqlite
     stern
+    stdenv
+    tcpdump
     terraform
     terragrunt
-    pkgs.tree-sitter
+    tree
+    tree-sitter
     unixtools.procps
     wget
-
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
+    wireshark
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -67,7 +76,12 @@ in
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
-  ];
+  ] ++ (lib.optionals isDarwin [
+    libpqxx # for postgresql on m1
+  ]) ++ (lib.optionals isLinux [
+    docker
+    i3
+  ]);
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
@@ -100,8 +114,11 @@ in
     LANG = "en_US.UTF-8";
     LC_ALL = "en_US.UTF-8";
     LC_CTYPE = "en_US.UTF-8";
-    LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"; # for psycopg2 on m1
-    CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"; #
+    GOPATH = "${config.home.homeDirectory}/go";
+    # LDFLAGS = "-L/opt/homebrew/opt/openssl@3/lib";
+    # CPPFLAGS = "-I/opt/homebrew/opt/openssl@3/include";
+    GPG_TTY = "$TTY";
+    PATH = "$PATH:/usr/local/go/bin:/opt/homebrew/bin:$HOME/.local/bin";
   };
 
   programs.jq.enable = true;
@@ -162,6 +179,11 @@ in
     tmux = {
       enableShellIntegration = true;
     };
+  };
+
+  programs.go = {
+    enable = true;
+    goPath = "go";
   };
 
   programs.git = git-settings;

@@ -252,6 +252,9 @@ return {
     {
         "hashivim/vim-terraform"
     },
+    {
+        "NoahTheDuke/vim-just"
+    },
     require "tdj.autoformat",
     -- require "tdj.set",
 }

@@ -17,6 +17,7 @@
     enableAutosuggestions = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
+    dotDir = ".config/zsh";
     plugins = [
       {
         name = "powerlevel10k";
@@ -35,9 +36,9 @@
     ];
     localVariables = {
       GPG_TTY = "$TTY";
-      KUBECONFIG = "$HOME/.kube/configs/eh3-test/config:$HOME/.kube/configs/ehk3-acceptance/config:$HOME/.kube/configs/ehk4-test/config:$HOME/.kube/configs/stembureauapp/config:$HOME/.kube/configs/sba-elements/config";
     };
     initExtra = ''
+      . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
       source ~/.p10k.zsh
       gw () {
         local out
@@ -85,12 +86,14 @@
       gwa = "git worktree add";
       v = "nvim";
       cat = "bat";
-      dotfiles = "/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME";
+      dotfiles = "git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME";
       f = "fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim";
       ls = "exa";
       lsa = "ls --icons --long --git --extended --all --header --group-directories-first";
       cht = "tmux-cht.sh";
       awsctx = "source ~/.local/bin/aws-profile-switcher";
+      kctx = "kubie ctx";
+      kns = "kubie ns";
     };
     history = {
       extended = true;

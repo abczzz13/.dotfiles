@@ -35,5 +35,6 @@
   "undotree": { "branch": "master", "commit": "485f01efde4e22cb1ce547b9e8c9238f36566f21" },
   "vim-fugitive": { "branch": "master", "commit": "43f18ab9155c853a84ded560c6104e6300ad41da" },
   "vim-helm": { "branch": "master", "commit": "c2e7b85711d410e1d73e64eb5df7b70b1c4c10eb" },
+  "vim-just": { "branch": "main", "commit": "f678f5ef3d6bc589e88b7f1da6e969a5f67a99dc" },
   "vim-terraform": { "branch": "master", "commit": "2bbc5f65a80c79a5110494a2ba1b869075fcf7a0" }
 }
