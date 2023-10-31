@@ -4,18 +4,22 @@
     };
     font = {
         normal = {
+            # family = "IntelOne Mono";
             family = "MesloLGS NF";
             style = "Regular";
         };
         bold = {
+            # family = "IntelOne Mono";
             family = "MesloLGS NF";
             style = "Bold";
         };
         italic = {
+            # family = "IntelOne Mono";
             family = "MesloLGS NF";
             style = "Italic";
         };
         bold_italic = {
+            # family = "IntelOne Mono";
             family = "MesloLGS NF";
             style = "Bold Italic";
         };

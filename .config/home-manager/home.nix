@@ -25,44 +25,53 @@ in
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    awscli2
-    cmatrix
     cookiecutter
-    curl
-    du-dust
-    fd
-    google-cloud-sdk
-    gnumake
-    gnused
     go-migrate
     golangci-lint
-    htop
     just
-    k9s
-    kubectl
-    kubernetes-helm
-    kubie
-    meslo-lgs-nf
-    minikube
-    nmap
     openssl
-    parallel
     pipx
     postgresql
     reattach-to-user-namespace
     rustup
     sops
     sqlite
-    stern
     stdenv
-    tcpdump
-    terraform
-    terragrunt
-    tree
     tree-sitter
+
+    # utils
+    cmatrix
+    curl
+    du-dust
+    fd
+    gnugrep
+    gnumake
+    gnused
+    htop
+    nmap
+    parallel
+    tcpdump
+    tree
     unixtools.procps
     wget
     wireshark
+
+    # cloud
+    awscli2
+    google-cloud-sdk
+    minikube
+    k9s
+    kubectl
+    kubernetes-helm
+    kubie
+    stern
+    terraform
+    terragrunt
+
+    # fonts
+    intel-one-mono
+    meslo-lgs-nf
+
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -157,7 +166,13 @@ in
     settings.modal = true;
   };
 
-  programs.exa = {
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
+    nix-direnv.enable = true;
+  };
+
+  programs.eza = {
     enable = true;
     enableAliases = true;
     git = false;
@@ -247,7 +262,6 @@ in
   programs.zsh = zsh-settings;
 
   # To be configured:
-  # programs.direnv.enable = true;
   # programs.gpg.enable = true;
   # programs.ssh.enable = true;
 

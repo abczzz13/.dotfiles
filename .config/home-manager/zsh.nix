@@ -83,12 +83,11 @@
       g = "git";
       gs = "git status -s";
       gb = "git branch --sort=-committerdate | fzf-tmux -p --reverse --header Checkout --preview 'git diff {-1} --color=always' --pointer='' | tr -d '+*' | xargs git checkout";
-      gwa = "git worktree add";
       v = "nvim";
       cat = "bat";
       dotfiles = "git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME";
       f = "fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim";
-      ls = "exa";
+      ls = "eza";
       lsa = "ls --icons --long --git --extended --all --header --group-directories-first";
       cht = "tmux-cht.sh";
       awsctx = "source ~/.local/bin/aws-profile-switcher";
